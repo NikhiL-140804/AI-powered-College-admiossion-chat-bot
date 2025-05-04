@@ -1,0 +1,1982 @@
+2025-04-20 19:38:58,104 - INFO - === Starting server with configuration ===
+2025-04-20 19:38:58,105 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 19:38:58,105 - INFO - MONGODB_URI configured: True
+2025-04-20 19:38:58,105 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 19:38:58,105 - INFO - ========================================
+2025-04-20 19:38:58,105 - INFO - CORS middleware configured
+2025-04-20 19:38:58,112 - INFO - Successfully connected to MongoDB
+2025-04-20 19:44:01,109 - INFO - === Starting server with configuration ===
+2025-04-20 19:44:01,109 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 19:44:01,109 - INFO - MONGODB_URI configured: True
+2025-04-20 19:44:01,109 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 19:44:01,109 - INFO - ========================================
+2025-04-20 19:44:01,110 - INFO - CORS middleware configured
+2025-04-20 19:44:01,118 - INFO - Successfully connected to MongoDB
+2025-04-20 19:44:13,324 - INFO - === New chat request ===
+2025-04-20 19:44:13,324 - INFO - Message: hi
+2025-04-20 19:44:13,325 - INFO - Language: english
+2025-04-20 19:44:13,325 - INFO - API key found
+2025-04-20 19:44:13,325 - INFO - Searching for context with query: hi
+2025-04-20 19:44:14,820 - INFO - Found 5 relevant documents
+2025-04-20 19:44:14,822 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 19:44:14,823 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:44:14,825 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:44:14,825 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:44:14,825 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 166, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:51:54,747 - INFO - === Starting server with configuration ===
+2025-04-20 19:51:54,747 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 19:51:54,747 - INFO - MONGODB_URI configured: True
+2025-04-20 19:51:54,747 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 19:51:54,747 - INFO - ========================================
+2025-04-20 19:51:54,747 - INFO - CORS middleware configured
+2025-04-20 19:51:54,761 - INFO - Successfully connected to MongoDB
+2025-04-20 19:52:11,203 - INFO - === New chat request ===
+2025-04-20 19:52:11,203 - INFO - Message: hi
+2025-04-20 19:52:11,203 - INFO - Language: english
+2025-04-20 19:52:11,204 - INFO - API key found
+2025-04-20 19:52:11,204 - INFO - Searching for context with query: hi
+2025-04-20 19:52:13,202 - INFO - Found 5 relevant documents
+2025-04-20 19:52:13,204 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 19:52:13,205 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:52:13,209 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:52:13,209 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:52:13,209 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 166, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:54:01,188 - INFO - === Starting server with configuration ===
+2025-04-20 19:54:01,189 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 19:54:01,189 - INFO - MONGODB_URI configured: True
+2025-04-20 19:54:01,189 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 19:54:01,189 - INFO - ========================================
+2025-04-20 19:54:01,189 - INFO - CORS middleware configured
+2025-04-20 19:54:01,197 - INFO - Successfully connected to MongoDB
+2025-04-20 19:55:35,539 - INFO - === New chat request ===
+2025-04-20 19:55:35,540 - INFO - Message: hi
+2025-04-20 19:55:35,540 - INFO - Language: english
+2025-04-20 19:55:35,540 - INFO - API key found
+2025-04-20 19:55:35,540 - INFO - Searching for context with query: hi
+2025-04-20 19:55:37,417 - INFO - Found 5 relevant documents
+2025-04-20 19:55:37,420 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 19:55:37,423 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:55:37,426 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:55:37,427 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:55:37,428 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 168, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:58:35,675 - INFO - === Starting server with configuration ===
+2025-04-20 19:58:35,675 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 19:58:35,675 - INFO - MONGODB_URI configured: True
+2025-04-20 19:58:35,675 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 19:58:35,675 - INFO - ========================================
+2025-04-20 19:58:35,676 - INFO - CORS middleware configured
+2025-04-20 19:58:35,692 - INFO - Successfully connected to MongoDB
+2025-04-20 19:58:48,807 - INFO - === New chat request ===
+2025-04-20 19:58:48,807 - INFO - Message: hi
+2025-04-20 19:58:48,807 - INFO - Language: english
+2025-04-20 19:58:48,807 - INFO - API key found
+2025-04-20 19:58:48,807 - INFO - Searching for context with query: hi
+2025-04-20 19:58:50,361 - INFO - Found 5 relevant documents
+2025-04-20 19:58:50,363 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 19:58:50,363 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:58:50,366 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:58:50,366 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:58:50,367 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 168, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:59:17,330 - INFO - === Starting server with configuration ===
+2025-04-20 19:59:17,330 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 19:59:17,330 - INFO - MONGODB_URI configured: True
+2025-04-20 19:59:17,330 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 19:59:17,331 - INFO - ========================================
+2025-04-20 19:59:17,331 - INFO - CORS middleware configured
+2025-04-20 19:59:17,339 - INFO - Successfully connected to MongoDB
+2025-04-20 19:59:27,347 - INFO - === New chat request ===
+2025-04-20 19:59:27,347 - INFO - Message: hi
+2025-04-20 19:59:27,347 - INFO - Language: english
+2025-04-20 19:59:27,347 - INFO - API key found
+2025-04-20 19:59:27,347 - INFO - Searching for context with query: hi
+2025-04-20 19:59:28,967 - INFO - Found 5 relevant documents
+2025-04-20 19:59:28,969 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 19:59:28,969 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:59:28,973 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:59:28,973 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 19:59:28,973 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 166, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 19:59:53,888 - INFO - === Starting server with configuration ===
+2025-04-20 19:59:53,888 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 19:59:53,888 - INFO - MONGODB_URI configured: True
+2025-04-20 19:59:53,889 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 19:59:53,889 - INFO - ========================================
+2025-04-20 19:59:53,889 - INFO - CORS middleware configured
+2025-04-20 19:59:53,896 - INFO - Successfully connected to MongoDB
+2025-04-20 20:00:16,641 - INFO - === New chat request ===
+2025-04-20 20:00:16,641 - INFO - Message: hi
+2025-04-20 20:00:16,641 - INFO - Language: english
+2025-04-20 20:00:16,641 - INFO - API key found
+2025-04-20 20:00:16,641 - INFO - Searching for context with query: hi
+2025-04-20 20:00:18,311 - INFO - Found 5 relevant documents
+2025-04-20 20:00:18,312 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:00:18,313 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:00:18,315 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:00:18,315 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:00:18,316 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 801, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 168, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:00:44,557 - INFO - === Starting server with configuration ===
+2025-04-20 20:00:44,557 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:00:44,557 - INFO - MONGODB_URI configured: True
+2025-04-20 20:00:44,557 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:00:44,557 - INFO - ========================================
+2025-04-20 20:00:44,558 - INFO - CORS middleware configured
+2025-04-20 20:00:44,565 - INFO - Successfully connected to MongoDB
+2025-04-20 20:00:57,090 - INFO - === New chat request ===
+2025-04-20 20:00:57,090 - INFO - Message: hi
+2025-04-20 20:00:57,090 - INFO - Language: english
+2025-04-20 20:00:57,090 - INFO - API key found
+2025-04-20 20:00:57,090 - INFO - Searching for context with query: hi
+2025-04-20 20:00:58,732 - INFO - Found 5 relevant documents
+2025-04-20 20:00:58,734 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:00:58,735 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:00:58,737 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:00:58,737 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:00:58,738 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 169, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:01:30,693 - INFO - === Starting server with configuration ===
+2025-04-20 20:01:30,693 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:01:30,694 - INFO - MONGODB_URI configured: True
+2025-04-20 20:01:30,694 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:01:30,694 - INFO - ========================================
+2025-04-20 20:01:30,694 - INFO - CORS middleware configured
+2025-04-20 20:01:30,702 - INFO - Successfully connected to MongoDB
+2025-04-20 20:04:14,439 - INFO - === Starting server with configuration ===
+2025-04-20 20:04:14,439 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:04:14,439 - INFO - MONGODB_URI configured: True
+2025-04-20 20:04:14,439 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:04:14,439 - INFO - ========================================
+2025-04-20 20:04:14,439 - INFO - CORS middleware configured
+2025-04-20 20:04:14,448 - INFO - Successfully connected to MongoDB
+2025-04-20 20:07:09,305 - INFO - === Starting server with configuration ===
+2025-04-20 20:07:09,305 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:07:09,305 - INFO - MONGODB_URI configured: True
+2025-04-20 20:07:09,305 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:07:09,305 - INFO - ========================================
+2025-04-20 20:07:09,306 - INFO - CORS middleware configured
+2025-04-20 20:07:09,313 - INFO - Successfully connected to MongoDB
+2025-04-20 20:12:03,564 - INFO - === New chat request ===
+2025-04-20 20:12:03,565 - INFO - Message: What are the courses offered?
+2025-04-20 20:12:03,565 - INFO - Language: english
+2025-04-20 20:12:03,565 - INFO - API key found
+2025-04-20 20:12:03,565 - INFO - Searching for context with query: What are the courses offered?
+2025-04-20 20:12:03,731 - INFO - Found 5 relevant documents
+2025-04-20 20:12:03,731 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:12:03,732 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:12:03,734 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:12:03,734 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:12:03,735 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 134, in process_message
+    client = anthropic.Anthropic()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 167, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:16:24,845 - INFO - === Starting server with configuration ===
+2025-04-20 20:16:24,846 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:16:24,846 - INFO - MONGODB_URI configured: True
+2025-04-20 20:16:24,846 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:16:24,846 - INFO - ========================================
+2025-04-20 20:16:24,846 - INFO - CORS middleware configured
+2025-04-20 20:16:24,856 - INFO - Successfully connected to MongoDB
+2025-04-20 20:16:31,254 - INFO - === Starting server with configuration ===
+2025-04-20 20:16:31,254 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:16:31,254 - INFO - MONGODB_URI configured: True
+2025-04-20 20:16:31,254 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:16:31,254 - INFO - ========================================
+2025-04-20 20:16:31,254 - INFO - CORS middleware configured
+2025-04-20 20:16:31,262 - INFO - Successfully connected to MongoDB
+2025-04-20 20:19:08,363 - INFO - === Starting server with configuration ===
+2025-04-20 20:19:08,363 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:19:08,364 - INFO - MONGODB_URI configured: True
+2025-04-20 20:19:08,364 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:19:08,364 - INFO - ========================================
+2025-04-20 20:19:08,364 - INFO - CORS middleware configured
+2025-04-20 20:19:08,372 - INFO - Successfully connected to MongoDB
+2025-04-20 20:20:28,308 - INFO - === Starting server with configuration ===
+2025-04-20 20:20:28,308 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:20:28,308 - INFO - MONGODB_URI configured: True
+2025-04-20 20:20:28,308 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:20:28,308 - INFO - ========================================
+2025-04-20 20:20:28,308 - INFO - CORS middleware configured
+2025-04-20 20:20:28,319 - INFO - Successfully connected to MongoDB
+2025-04-20 20:27:27,213 - INFO - === Starting server with configuration ===
+2025-04-20 20:27:27,213 - INFO - ANTHROPIC_API_KEY configured: True
+2025-04-20 20:27:27,213 - INFO - MONGODB_URI configured: True
+2025-04-20 20:27:27,213 - INFO - Current working directory: /Users/raghavendrarao/Downloads/project 2
+2025-04-20 20:27:27,213 - INFO - ========================================
+2025-04-20 20:27:27,214 - INFO - CORS middleware configured
+2025-04-20 20:27:27,231 - INFO - Successfully connected to MongoDB
+2025-04-20 20:27:49,240 - INFO - === New chat request ===
+2025-04-20 20:27:49,240 - INFO - Message: hi
+2025-04-20 20:27:49,240 - INFO - Language: english
+2025-04-20 20:27:49,240 - INFO - API key found
+2025-04-20 20:27:49,240 - INFO - Searching for context with query: hi
+2025-04-20 20:27:51,822 - INFO - Found 5 relevant documents
+2025-04-20 20:27:51,824 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:27:51,826 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:27:51,828 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:27:51,828 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:27:51,829 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Anthropic(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+    raise HTTPException(status_code=500, detail=f"Error with AI service: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:30:31,490 - INFO - === New chat request ===
+2025-04-20 20:30:31,491 - INFO - Message: hi
+2025-04-20 20:30:31,492 - INFO - Language: english
+2025-04-20 20:30:31,492 - INFO - API key found
+2025-04-20 20:30:31,492 - INFO - Searching for context with query: hi
+2025-04-20 20:30:33,124 - INFO - Found 5 relevant documents
+2025-04-20 20:30:33,126 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:30:33,128 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:30:33,131 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:30:33,132 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:30:33,132 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:35:16,329 - INFO - === New chat request ===
+2025-04-20 20:35:16,330 - INFO - Message: hi
+2025-04-20 20:35:16,330 - INFO - Language: english
+2025-04-20 20:35:16,330 - INFO - API key found
+2025-04-20 20:35:16,330 - INFO - Searching for context with query: hi
+2025-04-20 20:35:17,965 - INFO - Found 5 relevant documents
+2025-04-20 20:35:17,967 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:35:17,968 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:35:17,969 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:35:17,969 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:35:17,969 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Anthropic(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:36:42,078 - INFO - === New chat request ===
+2025-04-20 20:36:42,079 - INFO - Message: hi
+2025-04-20 20:36:42,079 - INFO - Language: english
+2025-04-20 20:36:42,079 - INFO - API key found
+2025-04-20 20:36:42,079 - INFO - Searching for context with query: hi
+2025-04-20 20:36:43,741 - INFO - Found 5 relevant documents
+2025-04-20 20:36:43,743 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:36:43,744 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:36:43,747 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Client(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:36:43,747 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:36:43,749 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Client(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+    logger.error(f"Unhandled error in process_message: {str(e)}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:42:05,760 - INFO - === New chat request ===
+2025-04-20 20:42:05,761 - INFO - Message: hi
+2025-04-20 20:42:05,761 - INFO - Language: english
+2025-04-20 20:42:05,761 - INFO - API key found
+2025-04-20 20:42:05,761 - INFO - Searching for context with query: hi
+2025-04-20 20:42:08,129 - INFO - Found 5 relevant documents
+2025-04-20 20:42:08,130 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:42:08,134 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:42:08,138 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Client(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:42:08,138 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:42:08,141 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    client = anthropic.Client(api_key=api_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+    'telugu': 'క్షమించండి, ఒక లోపం సంభవించింది. దయచేసి మళ్లీ ప్రయత్నించండి.',
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:44:50,308 - INFO - === New chat request ===
+2025-04-20 20:44:50,309 - INFO - Message: hi
+2025-04-20 20:44:50,310 - INFO - Language: english
+2025-04-20 20:44:50,310 - INFO - API key found
+2025-04-20 20:44:50,310 - INFO - Searching for context with query: hi
+2025-04-20 20:44:52,067 - INFO - Found 5 relevant documents
+2025-04-20 20:44:52,068 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:44:52,070 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:44:52,071 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    except Exception as e:
+                 ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:44:52,071 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:44:52,071 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    except Exception as e:
+                 ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:45:26,695 - INFO - === New chat request ===
+2025-04-20 20:45:26,696 - INFO - Message: tell me about the university
+2025-04-20 20:45:26,696 - INFO - Language: english
+2025-04-20 20:45:26,696 - INFO - API key found
+2025-04-20 20:45:26,696 - INFO - Searching for context with query: tell me about the university
+2025-04-20 20:45:27,425 - INFO - Found 5 relevant documents
+2025-04-20 20:45:27,426 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 20:45:27,426 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:45:27,427 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    except Exception as e:
+                 ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 20:45:27,427 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 20:45:27,427 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+    except Exception as e:
+                 ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 21:46:45,959 - INFO - === New chat request ===
+2025-04-20 21:46:45,960 - INFO - Message: hi
+2025-04-20 21:46:45,960 - INFO - Language: english
+2025-04-20 21:46:45,960 - INFO - API key found
+2025-04-20 21:46:45,960 - INFO - Searching for context with query: hi
+2025-04-20 21:46:52,567 - INFO - Found 5 relevant documents
+2025-04-20 21:46:52,570 - INFO - Successfully retrieved context from MongoDB
+2025-04-20 21:46:52,574 - ERROR - Error with Claude API: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 21:46:52,577 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 21:46:52,578 - ERROR - Unhandled error in process_message: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-04-20 21:46:52,578 - ERROR - Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 143, in process_message
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_client.py", line 119, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/anthropic/_base_client.py", line 796, in __init__
+    timeout=cast(Timeout, timeout),
+                              ^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/raghavendrarao/Downloads/project 2/server.py", line 178, in process_message
+fastapi.exceptions.HTTPException: 500: Error with AI service: Client.__init__() got an unexpected keyword argument 'proxies'
+
+2025-04-20 23:36:35,266 - INFO - Configuring Gemini API...
+2025-04-20 23:36:35,282 - INFO - Successfully connected to MongoDB
+2025-04-20 23:36:35,315 - INFO - Starting server on port 5003
+2025-04-20 23:36:35,842 - INFO - Configuring Gemini API...
+2025-04-20 23:36:35,850 - INFO - Successfully connected to MongoDB
+2025-04-20 23:36:35,942 - INFO - Configuring Gemini API...
+2025-04-20 23:36:35,966 - INFO - Successfully connected to MongoDB
+2025-04-20 23:37:59,507 - INFO - Received chat request
+2025-04-20 23:37:59,508 - INFO - Processing message: hi... in english
+2025-04-20 23:37:59,508 - INFO - Searching for: hi
+2025-04-20 23:38:07,946 - INFO - Found 5 relevant documents
+2025-04-20 23:38:07,950 - INFO - Sending prompt to Gemini...
+2025-04-20 23:38:07,950 - INFO - Generating response with Gemini...
+2025-04-20 23:38:07,950 - INFO - Prompt length: 3194
+2025-04-20 23:38:07,950 - INFO - Sending request to Gemini API with prompt length: 3194
+2025-04-20 23:38:09,739 - ERROR - Error calling Gemini API: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDgeSCjuS61oZT2pOanxt6JegyqCx1QgFw
+2025-04-20 23:38:09,739 - ERROR - Error generating response: 500: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDgeSCjuS61oZT2pOanxt6JegyqCx1QgFw
+2025-04-20 23:40:31,261 - INFO - Configuring Gemini API...
+2025-04-20 23:40:31,272 - INFO - Successfully connected to MongoDB
+2025-04-20 23:40:31,305 - INFO - Starting server on port 5003
+2025-04-20 23:40:31,810 - INFO - Configuring Gemini API...
+2025-04-20 23:40:31,816 - INFO - Successfully connected to MongoDB
+2025-04-20 23:40:31,851 - INFO - Configuring Gemini API...
+2025-04-20 23:40:31,859 - INFO - Successfully connected to MongoDB
+2025-04-20 23:40:35,336 - INFO - Received chat request
+2025-04-20 23:40:35,336 - INFO - Processing message: test... in english
+2025-04-20 23:40:35,336 - INFO - Searching for: test
+2025-04-20 23:40:35,371 - INFO - Found 5 relevant documents
+2025-04-20 23:40:35,371 - INFO - Sending prompt to Gemini...
+2025-04-20 23:40:35,371 - INFO - Generating response with Gemini...
+2025-04-20 23:40:35,371 - INFO - Prompt length: 3058
+2025-04-20 23:40:35,371 - INFO - Sending request to Gemini API with prompt length: 3058
+2025-04-20 23:40:37,027 - ERROR - Error calling Gemini API: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDgeSCjuS61oZT2pOanxt6JegyqCx1QgFw
+2025-04-20 23:40:37,027 - ERROR - Error generating response: 500: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDgeSCjuS61oZT2pOanxt6JegyqCx1QgFw
+2025-04-20 23:41:19,171 - INFO - Configuring Gemini API...
+2025-04-20 23:41:19,178 - INFO - Successfully connected to MongoDB
+2025-04-20 23:41:19,217 - INFO - Configuring Gemini API...
+2025-04-20 23:41:19,225 - INFO - Successfully connected to MongoDB
+2025-04-20 23:43:30,679 - INFO - Configuring Gemini API...
+2025-04-20 23:43:30,693 - INFO - Successfully connected to MongoDB
+2025-04-20 23:43:30,725 - INFO - Starting server on port 5003
+2025-04-20 23:43:31,226 - INFO - Configuring Gemini API...
+2025-04-20 23:43:31,233 - INFO - Successfully connected to MongoDB
+2025-04-20 23:43:31,267 - INFO - Configuring Gemini API...
+2025-04-20 23:43:31,274 - INFO - Successfully connected to MongoDB
+2025-04-20 23:44:11,315 - INFO - Received chat request
+2025-04-20 23:44:11,316 - INFO - Processing message: hi... in english
+2025-04-20 23:44:11,316 - INFO - Searching for: hi
+2025-04-20 23:44:16,407 - INFO - Found 5 relevant documents
+2025-04-20 23:44:16,407 - INFO - Sending prompt to Gemini...
+2025-04-20 23:44:16,408 - INFO - Sending request to Gemini API with prompt length: 3194
+2025-04-20 23:44:17,205 - INFO - Raw response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-04-20 23:44:17,205 - ERROR - Network error calling Gemini API: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBJBucqPHfgvtI19J4cuP_nuVMSMc3EAds
+2025-04-20 23:44:17,207 - INFO - Received response from Gemini
+2025-04-20 23:45:26,414 - INFO - Configuring Gemini API...
+2025-04-20 23:45:26,426 - INFO - Successfully connected to MongoDB
+2025-04-20 23:45:26,465 - INFO - Configuring Gemini API...
+2025-04-20 23:45:26,473 - INFO - Successfully connected to MongoDB
+2025-04-20 23:46:27,629 - INFO - Configuring Gemini API...
+2025-04-20 23:46:27,641 - INFO - Successfully connected to MongoDB
+2025-04-20 23:46:27,682 - INFO - Configuring Gemini API...
+2025-04-20 23:46:27,690 - INFO - Successfully connected to MongoDB
+2025-04-20 23:47:01,110 - INFO - Configuring Gemini API...
+2025-04-20 23:47:01,118 - INFO - Successfully connected to MongoDB
+2025-04-20 23:47:01,156 - INFO - Configuring Gemini API...
+2025-04-20 23:47:01,164 - INFO - Successfully connected to MongoDB
+2025-04-20 23:48:25,107 - INFO - Configuring Gemini API...
+2025-04-20 23:48:25,114 - INFO - Successfully connected to MongoDB
+2025-04-20 23:48:25,157 - INFO - Configuring Gemini API...
+2025-04-20 23:48:25,167 - INFO - Successfully connected to MongoDB
+2025-04-20 23:50:02,671 - INFO - Received chat request
+2025-04-20 23:50:02,673 - INFO - Processing message: hi... in english
+2025-04-20 23:50:02,673 - INFO - Searching for: hi
+2025-04-20 23:50:04,894 - INFO - Found 5 relevant documents
+2025-04-20 23:50:04,895 - INFO - Sending prompt to Gemini...
+2025-04-20 23:50:04,895 - INFO - Sending request to Gemini API with prompt length: 3194
+2025-04-20 23:50:07,664 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Okay, I have reviewed the provided PDF metadata from the SCSVMV University website. It appears you are just saying \"hi\". I don't have enough information to help you with anything specific.\n\nIs there anything else I can help you with regarding SCSVMV University? For example, are you looking for information about:\n\n*   Admissions?\n*   Specific departments or programs?\n*   Contact information?\n
+2025-04-20 23:50:07,664 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:50:07,664 - INFO - Generated response length: 464
+2025-04-20 23:50:07,667 - INFO - Received response from Gemini
+2025-04-20 23:51:06,329 - INFO - Received chat request
+2025-04-20 23:51:06,330 - INFO - Processing message: what are the courses offered... in english
+2025-04-20 23:51:06,330 - INFO - Searching for: what are the courses offered
+2025-04-20 23:51:06,515 - INFO - Found 5 relevant documents
+2025-04-20 23:51:06,515 - INFO - Sending prompt to Gemini...
+2025-04-20 23:51:06,516 - INFO - Sending request to Gemini API with prompt length: 3077
+2025-04-20 23:51:08,726 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided context mentions \"Courses Offered and Eligibility\" and \"Academic Programmes\" but doesn't list specific courses. Therefore, I cannot provide a list of courses offered based solely on this information.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "
+2025-04-20 23:51:08,726 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:51:08,727 - INFO - Generated response length: 213
+2025-04-20 23:51:08,730 - INFO - Received response from Gemini
+2025-04-20 23:51:23,966 - INFO - Received chat request
+2025-04-20 23:51:23,967 - INFO - Processing message: courses... in english
+2025-04-20 23:51:23,967 - INFO - Searching for: courses
+2025-04-20 23:51:23,983 - INFO - Found 5 relevant documents
+2025-04-20 23:51:23,983 - INFO - Sending prompt to Gemini...
+2025-04-20 23:51:23,983 - INFO - Sending request to Gemini API with prompt length: 3056
+2025-04-20 23:51:26,336 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided context, SCSVMV Deemed to be University offers courses. The document at https://kanchiuniv.ac.in/admission/courses-offered-and-eligibility/#content specifically mentions \"Courses Offered and Eligibility\".\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+2025-04-20 23:51:26,336 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:51:26,336 - INFO - Generated response length: 227
+2025-04-20 23:51:26,337 - INFO - Received response from Gemini
+2025-04-20 23:51:47,708 - INFO - Received chat request
+2025-04-20 23:51:47,709 - INFO - Processing message: be... in english
+2025-04-20 23:51:47,710 - INFO - Searching for: be
+2025-04-20 23:51:47,713 - INFO - Found 0 relevant documents
+2025-04-20 23:51:47,713 - INFO - Sending prompt to Gemini...
+2025-04-20 23:51:47,713 - INFO - Sending request to Gemini API with prompt length: 197
+2025-04-20 23:51:50,142 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The question \"be\" is incomplete and doesn't provide enough context to answer anything about SCSVMV University. I need a specific question about the university to provide a relevant answer.\n\nFor example, a good question would be:\n\n*   \"What undergraduate programs does SCSVMV University offer?\"\n*   \"Where is SCSVMV University located?\"\n*   \"When was SCSVMV University established?\"\n\nPlea
+2025-04-20 23:51:50,143 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:51:50,143 - INFO - Generated response length: 465
+2025-04-20 23:51:50,144 - INFO - Received response from Gemini
+2025-04-20 23:52:19,205 - INFO - Received chat request
+2025-04-20 23:52:19,206 - INFO - Processing message: who is the hod of cse department... in english
+2025-04-20 23:52:19,206 - INFO - Searching for: who is the hod of cse department
+2025-04-20 23:52:19,939 - INFO - Found 5 relevant documents
+2025-04-20 23:52:19,939 - INFO - Sending prompt to Gemini...
+2025-04-20 23:52:19,939 - INFO - Sending request to Gemini API with prompt length: 3121
+2025-04-20 23:52:22,412 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but based on the provided information, I cannot determine who the HOD (Head of Department) of the Computer Science and Engineering (CSE) department is at SCSVMV University. The provided text snippets mainly contain general information about the university, contact details, news, and mention of the CSE department's supporting staff, but not the HOD's name.\n"
+          }
+        ],
+       
+2025-04-20 23:52:22,412 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:52:22,412 - INFO - Generated response length: 370
+2025-04-20 23:52:22,415 - INFO - Received response from Gemini
+2025-04-20 23:52:48,506 - INFO - Received chat request
+2025-04-20 23:52:48,507 - INFO - Processing message: who is senthil kumaran... in english
+2025-04-20 23:52:48,507 - INFO - Searching for: who is senthil kumaran
+2025-04-20 23:52:48,517 - INFO - Found 5 relevant documents
+2025-04-20 23:52:48,517 - INFO - Sending prompt to Gemini...
+2025-04-20 23:52:48,517 - INFO - Sending request to Gemini API with prompt length: 3078
+2025-04-20 23:52:50,822 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information from the SCSVMV University website, Senthil Kumaran is a person associated with the university. The pages \"Dr.M.Senthil Kumaran – SCSVMV Deemed to be University\" suggest he is likely a faculty member or staff member.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HAR
+2025-04-20 23:52:50,825 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:52:50,825 - INFO - Generated response length: 251
+2025-04-20 23:52:50,829 - INFO - Received response from Gemini
+2025-04-20 23:55:09,970 - INFO - Received chat request
+2025-04-20 23:55:09,971 - INFO - Processing message: contact details... in english
+2025-04-20 23:55:09,971 - INFO - Searching for: contact details
+2025-04-20 23:55:10,407 - INFO - Found 5 relevant documents
+2025-04-20 23:55:10,408 - INFO - Sending prompt to Gemini...
+2025-04-20 23:55:10,408 - INFO - Sending request to Gemini API with prompt length: 3141
+2025-04-20 23:55:12,623 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, here are the contact details for SCSVMV University:\n\n*   **Phone:** +91 9629 00 11 44\n*   **Email:** info@kanchiuniv.ac.in\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+        
+2025-04-20 23:55:12,623 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:55:12,623 - INFO - Generated response length: 158
+2025-04-20 23:55:12,625 - INFO - Received response from Gemini
+2025-04-20 23:55:44,150 - INFO - Received chat request
+2025-04-20 23:55:44,151 - INFO - Processing message: courses... in english
+2025-04-20 23:55:44,151 - INFO - Searching for: courses
+2025-04-20 23:55:44,197 - INFO - Found 5 relevant documents
+2025-04-20 23:55:44,197 - INFO - Sending prompt to Gemini...
+2025-04-20 23:55:44,197 - INFO - Sending request to Gemini API with prompt length: 3048
+2025-04-20 23:55:46,367 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided context, SCSVMV Deemed to be University offers courses. The link \"https://kanchiuniv.ac.in/admission/courses-offered-and-eligibility/\" specifically mentions \"Courses Offered and Eligibility\".\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          
+2025-04-20 23:55:46,367 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:55:46,367 - INFO - Generated response length: 214
+2025-04-20 23:55:46,369 - INFO - Received response from Gemini
+2025-04-20 23:56:14,289 - INFO - Received chat request
+2025-04-20 23:56:14,290 - INFO - Processing message: faculty of cse... in english
+2025-04-20 23:56:14,290 - INFO - Searching for: faculty of cse
+2025-04-20 23:56:14,338 - INFO - Found 5 relevant documents
+2025-04-20 23:56:14,338 - INFO - Sending prompt to Gemini...
+2025-04-20 23:56:14,338 - INFO - Sending request to Gemini API with prompt length: 3123
+2025-04-20 23:56:16,679 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided context, to find the faculty of CSE (Computer Science and Engineering) at SCSVMV University, you should visit this URL:\n\nhttps://kanchiuniv.ac.in/academics/department-of-computer-science-and-engineering/faculty-department-computer-science-and-engg/\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+      
+2025-04-20 23:56:16,681 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-20 23:56:16,681 - INFO - Generated response length: 271
+2025-04-20 23:56:16,683 - INFO - Received response from Gemini
+2025-04-21 00:30:57,801 - INFO - Configuring Gemini API...
+2025-04-21 00:30:57,831 - INFO - Successfully connected to MongoDB
+2025-04-21 00:30:57,875 - INFO - Configuring Gemini API...
+2025-04-21 00:30:57,883 - INFO - Successfully connected to MongoDB
+2025-04-21 00:34:25,337 - INFO - Configuring Gemini API...
+2025-04-21 00:34:25,349 - INFO - Successfully connected to MongoDB
+2025-04-21 00:34:25,391 - INFO - Configuring Gemini API...
+2025-04-21 00:34:25,399 - INFO - Successfully connected to MongoDB
+2025-04-21 00:35:20,137 - INFO - Configuring Gemini API...
+2025-04-21 00:35:20,144 - INFO - Successfully connected to MongoDB
+2025-04-21 00:35:20,184 - INFO - Configuring Gemini API...
+2025-04-21 00:35:20,192 - INFO - Successfully connected to MongoDB
+2025-04-21 00:37:21,923 - INFO - Configuring Gemini API...
+2025-04-21 00:37:21,930 - INFO - Successfully connected to MongoDB
+2025-04-21 00:37:21,973 - INFO - Configuring Gemini API...
+2025-04-21 00:37:21,981 - INFO - Successfully connected to MongoDB
+2025-04-21 00:38:28,542 - INFO - Configuring Gemini API...
+2025-04-21 00:38:28,551 - INFO - Successfully connected to MongoDB
+2025-04-21 00:38:28,582 - INFO - Starting server on port 5003
+2025-04-21 00:39:27,461 - INFO - Received chat request
+2025-04-21 00:39:27,461 - INFO - Processing message: hi... in english
+2025-04-21 00:39:42,284 - INFO - Received chat request
+2025-04-21 00:39:42,285 - INFO - Processing message: available courses... in english
+2025-04-21 00:39:42,285 - INFO - Searching for: courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-04-21 00:39:58,846 - INFO - Found 5 relevant documents
+2025-04-21 00:39:58,852 - INFO - Sending prompt to Gemini...
+2025-04-21 00:39:58,853 - INFO - Sending request to Gemini API with prompt length: 58410
+2025-04-21 00:40:04,604 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "SCSVMV University offers a wide range of courses at the undergraduate and postgraduate levels, as well as research programs. Here's a summary of the available courses:\n\n**Undergraduate Courses:**\n\n*   **B.E. / B.Tech:**\n    *   Computer Science & Engineering\n    *   Civil Engineering\n    *   Electronics & Communication Engineering\n    *   Electrical & Electronics Engineering\n    *   Mechanic
+2025-04-21 00:40:04,604 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 00:40:04,604 - INFO - Generated response length: 2275
+2025-04-21 00:40:04,605 - INFO - Received response from Gemini
+2025-04-21 00:40:46,644 - INFO - Received chat request
+2025-04-21 00:40:46,644 - INFO - Processing message: available UG courses... in english
+2025-04-21 00:40:46,644 - INFO - Searching for: courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-04-21 00:40:50,569 - INFO - Found 5 relevant documents
+2025-04-21 00:40:50,570 - INFO - Sending prompt to Gemini...
+2025-04-21 00:40:50,571 - INFO - Sending request to Gemini API with prompt length: 58413
+2025-04-21 00:40:54,567 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The available undergraduate (UG) courses at SCSVMV University are:\n\n*   B.E. Computer Science & Engineering\n*   B.E. Civil Engineering\n*   B.E. Electronics & Communication Engineering\n*   B.E. Electrical & Electronics Engineering\n*   B.E. Mechanical Engineering\n*   B.E. Mechatronics Engineering\n*   B.Tech. Information Technology\n*   B.A.M.S. - Bachelor of Ayurvedic Medicine and Surgery\n*   
+2025-04-21 00:40:54,568 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 00:40:54,568 - INFO - Generated response length: 1024
+2025-04-21 00:40:54,569 - INFO - Received response from Gemini
+2025-04-21 00:41:50,669 - INFO - Received chat request
+2025-04-21 00:41:50,669 - INFO - Processing message: contact information... in english
+2025-04-21 00:41:50,669 - INFO - Searching for: contact information
+2025-04-21 00:41:50,877 - INFO - Found 5 relevant documents
+2025-04-21 00:41:50,877 - INFO - Sending prompt to Gemini...
+2025-04-21 00:41:50,877 - INFO - Sending request to Gemini API with prompt length: 249
+2025-04-21 00:42:20,880 - ERROR - Network error calling Gemini API: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBJBucqPHfgvtI19J4cuP_nuVMSMc3EAds (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x103795790>: Failed to resolve 'generativelanguage.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-04-21 00:42:20,880 - INFO - Received response from Gemini
+2025-04-21 00:42:53,625 - INFO - Received chat request
+2025-04-21 00:42:53,626 - INFO - Processing message: cotact information... in english
+2025-04-21 00:42:53,627 - INFO - Searching for: cotact information
+2025-04-21 00:42:54,063 - INFO - Found 5 relevant documents
+2025-04-21 00:42:54,063 - INFO - Sending prompt to Gemini...
+2025-04-21 00:42:54,064 - INFO - Sending request to Gemini API with prompt length: 248
+2025-04-21 00:43:26,526 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided context is insufficient to provide contact information for SCSVMV University. To answer your question, I need the university database to contain contact details such as:\n\n*   **Phone number(s)**\n*   **Email address(es)**\n*   **Postal address**\n*   **Website URL**\n\nPlease provide the relevant information from the university database so I can answer your question.\n"
+          }
+   
+2025-04-21 00:43:26,527 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 00:43:26,527 - INFO - Generated response length: 378
+2025-04-21 00:43:26,528 - INFO - Received response from Gemini
+2025-04-21 00:45:55,470 - INFO - Configuring Gemini API...
+2025-04-21 00:45:55,486 - INFO - Successfully connected to MongoDB
+2025-04-21 00:45:55,519 - INFO - Starting server on port 5003
+2025-04-21 00:45:56,029 - INFO - Configuring Gemini API...
+2025-04-21 00:45:56,036 - INFO - Successfully connected to MongoDB
+2025-04-21 00:45:56,073 - INFO - Configuring Gemini API...
+2025-04-21 00:45:56,080 - INFO - Successfully connected to MongoDB
+2025-04-21 00:47:20,523 - INFO - Configuring Gemini API...
+2025-04-21 00:47:20,531 - INFO - Successfully connected to MongoDB
+2025-04-21 00:47:20,573 - INFO - Configuring Gemini API...
+2025-04-21 00:47:20,579 - INFO - Successfully connected to MongoDB
+2025-04-21 00:50:25,973 - INFO - Received chat request
+2025-04-21 00:50:25,974 - INFO - Processing message: hi... in english
+2025-04-21 00:50:44,981 - INFO - Received chat request
+2025-04-21 00:50:44,982 - INFO - Processing message: cotact details... in english
+2025-04-21 00:52:34,964 - INFO - Received chat request
+2025-04-21 00:52:34,967 - INFO - Processing message: contact details... in english
+2025-04-21 00:54:01,656 - INFO - Received chat request
+2025-04-21 00:54:01,659 - INFO - Processing message: phone number?... in english
+2025-04-21 00:55:02,852 - INFO - Configuring Gemini API...
+2025-04-21 00:55:02,864 - INFO - Successfully connected to MongoDB
+2025-04-21 00:55:02,907 - INFO - Configuring Gemini API...
+2025-04-21 00:55:02,925 - INFO - Successfully connected to MongoDB
+2025-04-21 00:57:46,058 - INFO - Received chat request
+2025-04-21 00:57:46,061 - INFO - Processing message: faculty of cse... in english
+2025-04-21 00:57:46,061 - INFO - Searching for: faculty of cse
+2025-04-21 00:57:46,323 - INFO - Found 5 relevant documents
+2025-04-21 00:57:46,323 - INFO - Sending prompt to Gemini...
+2025-04-21 00:57:46,323 - INFO - Sending request to Gemini API with prompt length: 244
+2025-04-21 00:57:48,557 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided context is insufficient to answer the question \"faculty of cse\". I need more information from the university database to provide a list of faculty members in the Computer Science and Engineering (CSE) department.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+
+2025-04-21 00:57:48,558 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 00:57:48,558 - INFO - Generated response length: 226
+2025-04-21 00:57:48,559 - INFO - Received response from Gemini
+2025-04-21 00:57:51,495 - INFO - Configuring Gemini API...
+2025-04-21 00:57:51,507 - INFO - Successfully connected to MongoDB
+2025-04-21 00:57:51,548 - INFO - Configuring Gemini API...
+2025-04-21 00:57:51,555 - INFO - Successfully connected to MongoDB
+2025-04-21 00:58:05,211 - INFO - Received chat request
+2025-04-21 00:58:05,211 - INFO - Processing message: list of faculty members in the computer science an... in english
+2025-04-21 00:58:05,212 - INFO - Searching for: list of faculty members in the computer science and engineering (cse) department.
+2025-04-21 00:58:05,868 - INFO - Found 5 relevant documents
+2025-04-21 00:58:05,869 - INFO - Sending prompt to Gemini...
+2025-04-21 00:58:05,869 - INFO - Sending request to Gemini API with prompt length: 311
+2025-04-21 00:58:08,872 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Okay, I need the relevant information from the university database to answer your question. You stated \"Context from the university database: Here is the relevant information:\".  **Please provide the information from the database** so I can list the faculty members in the Computer Science and Engineering (CSE) department.\n\nFor example, you could provide information like this:\n\n\"Context:\n\n*  
+2025-04-21 00:58:08,873 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 00:58:08,873 - INFO - Generated response length: 887
+2025-04-21 00:58:08,874 - INFO - Received response from Gemini
+2025-04-21 00:59:16,611 - INFO - Received chat request
+2025-04-21 00:59:16,613 - INFO - Processing message: contact details... in english
+2025-04-21 01:01:18,678 - INFO - Configuring Gemini API...
+2025-04-21 01:01:18,693 - INFO - Successfully connected to MongoDB
+2025-04-21 01:01:18,737 - INFO - Configuring Gemini API...
+2025-04-21 01:01:18,750 - INFO - Successfully connected to MongoDB
+2025-04-21 01:04:05,442 - INFO - Received chat request
+2025-04-21 01:04:05,443 - INFO - Processing message: contact details... in english
+2025-04-21 01:05:32,252 - INFO - Configuring Gemini API...
+2025-04-21 01:05:32,266 - INFO - Successfully connected to MongoDB
+2025-04-21 01:05:32,309 - INFO - Configuring Gemini API...
+2025-04-21 01:05:32,316 - INFO - Successfully connected to MongoDB
+2025-04-21 01:06:13,509 - INFO - Received chat request
+2025-04-21 01:06:13,511 - INFO - Processing message: contact details... in english
+2025-04-21 01:08:11,919 - INFO - Configuring Gemini API...
+2025-04-21 01:08:11,932 - INFO - Successfully connected to MongoDB
+2025-04-21 01:08:11,982 - INFO - Configuring Gemini API...
+2025-04-21 01:08:11,996 - INFO - Successfully connected to MongoDB
+2025-04-21 01:08:44,246 - INFO - Received chat request
+2025-04-21 01:08:44,247 - INFO - Processing message: contact details... in english
+2025-04-21 01:09:03,212 - INFO - Received chat request
+2025-04-21 01:09:03,212 - INFO - Processing message: contact details... in telugu
+2025-04-21 01:09:23,172 - INFO - Received chat request
+2025-04-21 01:09:23,173 - INFO - Processing message: hi... in english
+2025-04-21 01:10:00,640 - INFO - Received chat request
+2025-04-21 01:10:00,644 - INFO - Processing message: faculty of cse... in english
+2025-04-21 01:10:00,644 - INFO - Searching for: faculty of cse
+2025-04-21 01:10:00,868 - INFO - Found 5 relevant documents
+2025-04-21 01:10:00,868 - INFO - Sending prompt to Gemini...
+2025-04-21 01:10:00,868 - INFO - Sending request to Gemini API with prompt length: 244
+2025-04-21 01:10:03,079 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Since the provided context from the university database is empty, I cannot provide any information about the faculty of CSE at SCSVMV University. I need data from the database to answer your question.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "N
+2025-04-21 01:10:03,080 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:10:03,080 - INFO - Generated response length: 201
+2025-04-21 01:10:03,082 - INFO - Received response from Gemini
+2025-04-21 01:10:41,502 - INFO - Received chat request
+2025-04-21 01:10:41,504 - INFO - Processing message: timings... in english
+2025-04-21 01:10:41,505 - INFO - Searching for: timings
+2025-04-21 01:10:43,094 - INFO - Found 5 relevant documents
+2025-04-21 01:10:43,095 - INFO - Sending prompt to Gemini...
+2025-04-21 01:10:43,095 - INFO - Sending request to Gemini API with prompt length: 237
+2025-04-21 01:10:45,691 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided context is empty. I need information about SCSVMV University, specifically about timings (likely for classes, office hours, or specific events), to answer your question.\n\nPlease provide the relevant information from the university database. For example:\n\n*   \"SCSVMV University office hours are 9:00 AM to 5:00 PM, Monday to Friday.\"\n*   \"The library is open from 8:00 AM to 10:00 P
+2025-04-21 01:10:45,691 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:10:45,691 - INFO - Generated response length: 537
+2025-04-21 01:10:45,693 - INFO - Received response from Gemini
+2025-04-21 01:11:18,361 - INFO - Configuring Gemini API...
+2025-04-21 01:11:18,373 - INFO - Successfully connected to MongoDB
+2025-04-21 01:11:18,414 - INFO - Configuring Gemini API...
+2025-04-21 01:11:18,421 - INFO - Successfully connected to MongoDB
+2025-04-21 01:11:18,423 - INFO - Received chat request
+2025-04-21 01:11:18,423 - INFO - Processing message: be timings... in english
+2025-04-21 01:11:18,424 - INFO - Searching for: be timings
+2025-04-21 01:11:19,056 - INFO - Found 5 relevant documents
+2025-04-21 01:11:19,056 - INFO - Sending prompt to Gemini...
+2025-04-21 01:11:19,056 - INFO - Sending request to Gemini API with prompt length: 240
+2025-04-21 01:11:22,071 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided context is insufficient to answer the question \"be timings\". I need more information about what \"be\" refers to.\n\nTo answer, I need to know:\n\n*   **What does \"be\" stand for?** (e.g., \"be\" could refer to Bachelor of Engineering, or a specific building, or a department, etc.)\n*   **What kind of timings are you looking for?** (e.g., class timings, office hours, exam timings, eve
+2025-04-21 01:11:22,071 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:11:22,071 - INFO - Generated response length: 607
+2025-04-21 01:11:22,073 - INFO - Received response from Gemini
+2025-04-21 01:11:30,803 - INFO - Configuring Gemini API...
+2025-04-21 01:11:30,811 - INFO - Successfully connected to MongoDB
+2025-04-21 01:11:30,837 - INFO - Starting server on port 5003
+2025-04-21 01:11:40,070 - INFO - Received chat request
+2025-04-21 01:11:40,071 - INFO - Processing message: be cse timings... in english
+2025-04-21 01:11:40,071 - INFO - Searching for: be cse timings
+2025-04-21 01:11:40,805 - INFO - Found 5 relevant documents
+2025-04-21 01:11:40,805 - INFO - Sending prompt to Gemini...
+2025-04-21 01:11:40,805 - INFO - Sending request to Gemini API with prompt length: 244
+2025-04-21 01:11:43,664 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided context is insufficient to answer the question \"be cse timings\". I need more information about what specifically you are asking for regarding \"be cse timings\".\n\nFor example, are you asking about:\n\n*   **Class timings:** The specific schedule of classes for the BE CSE (Bachelor of Engineering in Computer Science and Engineering) program?\n*   **Exam timings:** The schedule of exam
+2025-04-21 01:11:43,664 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:11:43,664 - INFO - Generated response length: 671
+2025-04-21 01:11:43,666 - INFO - Received response from Gemini
+2025-04-21 01:12:10,097 - INFO - Received chat request
+2025-04-21 01:12:10,098 - INFO - Processing message: class timings... in english
+2025-04-21 01:12:10,099 - INFO - Searching for: class timings
+2025-04-21 01:12:10,631 - INFO - Found 5 relevant documents
+2025-04-21 01:12:10,631 - INFO - Sending prompt to Gemini...
+2025-04-21 01:12:10,631 - INFO - Sending request to Gemini API with prompt length: 243
+2025-04-21 01:12:13,190 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided context is insufficient to answer the question \"class timings\". The database entry is incomplete. More information about SCSVMV University is needed to provide class timings.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+
+2025-04-21 01:12:13,191 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:12:13,191 - INFO - Generated response length: 188
+2025-04-21 01:12:13,194 - INFO - Received response from Gemini
+2025-04-21 01:12:33,382 - INFO - Received chat request
+2025-04-21 01:12:33,383 - INFO - Processing message: cse faculty... in english
+2025-04-21 01:13:02,336 - INFO - Received chat request
+2025-04-21 01:13:02,341 - INFO - Processing message: who is the hod of cse... in english
+2025-04-21 01:14:44,164 - INFO - Configuring Gemini API...
+2025-04-21 01:14:44,172 - INFO - Successfully connected to MongoDB
+2025-04-21 01:14:44,215 - INFO - Configuring Gemini API...
+2025-04-21 01:14:44,225 - INFO - Successfully connected to MongoDB
+2025-04-21 01:19:55,754 - INFO - Received chat request
+2025-04-21 01:19:55,755 - INFO - Processing message: faculty details... in english
+2025-04-21 01:20:08,132 - INFO - Received chat request
+2025-04-21 01:20:08,133 - INFO - Processing message: faculty of cse... in english
+2025-04-21 01:23:30,892 - INFO - Configuring Gemini API...
+2025-04-21 01:23:30,905 - INFO - Successfully connected to MongoDB
+2025-04-21 01:23:30,950 - INFO - Configuring Gemini API...
+2025-04-21 01:23:30,957 - INFO - Successfully connected to MongoDB
+2025-04-21 01:23:45,939 - INFO - Configuring Gemini API...
+2025-04-21 01:23:45,947 - INFO - Successfully connected to MongoDB
+2025-04-21 01:23:45,976 - INFO - Starting server on port 5003
+2025-04-21 01:24:33,753 - INFO - Configuring Gemini API...
+2025-04-21 01:24:33,760 - INFO - Successfully connected to MongoDB
+2025-04-21 01:24:33,806 - INFO - Configuring Gemini API...
+2025-04-21 01:24:33,813 - INFO - Successfully connected to MongoDB
+2025-04-21 01:26:21,001 - INFO - Configuring Gemini API...
+2025-04-21 01:26:21,009 - INFO - Successfully connected to MongoDB
+2025-04-21 01:26:21,052 - INFO - Configuring Gemini API...
+2025-04-21 01:26:21,059 - INFO - Successfully connected to MongoDB
+2025-04-21 01:26:38,718 - INFO - Received chat request
+2025-04-21 01:26:38,719 - INFO - Processing message: cse faculty... in english
+2025-04-21 01:27:46,970 - INFO - Configuring Gemini API...
+2025-04-21 01:27:46,980 - INFO - Successfully connected to MongoDB
+2025-04-21 01:27:47,028 - INFO - Configuring Gemini API...
+2025-04-21 01:27:47,036 - INFO - Successfully connected to MongoDB
+2025-04-21 01:28:07,294 - INFO - Configuring Gemini API...
+2025-04-21 01:28:07,304 - INFO - Successfully connected to MongoDB
+2025-04-21 01:28:07,346 - INFO - Configuring Gemini API...
+2025-04-21 01:28:07,352 - INFO - Successfully connected to MongoDB
+2025-04-21 01:28:27,216 - INFO - Configuring Gemini API...
+2025-04-21 01:28:27,223 - INFO - Successfully connected to MongoDB
+2025-04-21 01:28:27,271 - INFO - Configuring Gemini API...
+2025-04-21 01:28:27,279 - INFO - Successfully connected to MongoDB
+2025-04-21 01:28:39,365 - INFO - Received chat request
+2025-04-21 01:28:39,366 - INFO - Processing message: cse faculty... in english
+2025-04-21 01:28:53,719 - INFO - Received chat request
+2025-04-21 01:28:53,719 - INFO - Processing message: hod of cse... in english
+2025-04-21 01:29:13,824 - INFO - Configuring Gemini API...
+2025-04-21 01:29:13,832 - INFO - Successfully connected to MongoDB
+2025-04-21 01:29:13,865 - INFO - Starting server on port 5003
+2025-04-21 01:29:44,021 - INFO - Received chat request
+2025-04-21 01:29:44,022 - INFO - Processing message: hod of cse... in english
+2025-04-21 01:30:28,571 - INFO - Configuring Gemini API...
+2025-04-21 01:30:28,579 - INFO - Successfully connected to MongoDB
+2025-04-21 01:30:28,622 - INFO - Configuring Gemini API...
+2025-04-21 01:30:28,631 - INFO - Successfully connected to MongoDB
+2025-04-21 01:31:46,196 - INFO - Received chat request
+2025-04-21 01:31:46,196 - INFO - Processing message: hod of cse... in english
+2025-04-21 01:38:01,766 - INFO - Received chat request
+2025-04-21 01:38:01,769 - INFO - Processing message: events in scsvmv... in english
+2025-04-21 01:38:01,769 - INFO - Searching MongoDB with query: events in scsvmv
+2025-04-21 01:38:01,770 - INFO - Expanded search terms: events in scsvmv
+2025-04-21 01:38:02,340 - INFO - Found 5 documents matching the search
+2025-04-21 01:38:02,342 - INFO - Processing document with score 10.021203782823351 from URL https://kanchiuniv.ac.in/phy/pastevents.htm
+2025-04-21 01:38:02,342 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:38:02,343 - INFO - Processing document with score 5.837024739583334 from URL http://kanchiuniv.ac.in#content
+2025-04-21 01:38:02,343 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:02,343 - INFO - Processing document with score 5.837024739583334 from URL https://kanchiuniv.ac.in#content
+2025-04-21 01:38:02,344 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:02,344 - INFO - Processing document with score 5.837024739583334 from URL https://kanchiuniv.ac.in
+2025-04-21 01:38:02,344 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:02,344 - INFO - Processing document with score 5.837024739583334 from URL https://kanchiuniv.ac.in/
+2025-04-21 01:38:02,344 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:02,344 - INFO - Final context length: 30695
+2025-04-21 01:38:02,344 - INFO - Sending prompt to Gemini...
+2025-04-21 01:38:02,344 - INFO - Sending request to Gemini API with prompt length: 30906
+2025-04-21 01:38:06,458 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "SCSVMV University holds a variety of events throughout the year. These events include:\n\n*   **Conferences and Seminars:** International and National conferences and seminars are held on various topics, particularly by the Department of Physics. Examples include the International Conference on Functional Materials (ICFM), National Conference on Thermophysical Properties (NCTP), and National Seminars
+2025-04-21 01:38:06,458 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:38:06,459 - INFO - Generated response length: 1383
+2025-04-21 01:38:06,462 - INFO - Received response from Gemini
+2025-04-21 01:38:26,322 - INFO - Received chat request
+2025-04-21 01:38:26,323 - INFO - Processing message: bios event... in english
+2025-04-21 01:38:26,323 - INFO - Searching MongoDB with query: bios event
+2025-04-21 01:38:26,323 - INFO - Expanded search terms: bios event
+2025-04-21 01:38:26,423 - INFO - Found 5 documents matching the search
+2025-04-21 01:38:26,424 - INFO - Processing document with score 9.268599616156685 from URL https://kanchiuniv.ac.in/phy/pastevents.htm
+2025-04-21 01:38:26,424 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:38:26,424 - INFO - Processing document with score 5.2086029819054644 from URL https://kanchiuniv.ac.in/academics/department-of-computer-science-and-engineering/events-cse/#content
+2025-04-21 01:38:26,424 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:26,424 - INFO - Processing document with score 5.2086029819054644 from URL https://kanchiuniv.ac.in/academics/department-of-computer-science-and-engineering/events-cse/
+2025-04-21 01:38:26,424 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:26,424 - INFO - Processing document with score 4.593526785714285 from URL http://kanchiuniv.ac.in#content
+2025-04-21 01:38:26,425 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:26,425 - INFO - Processing document with score 4.593526785714285 from URL https://kanchiuniv.ac.in/
+2025-04-21 01:38:26,425 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:26,425 - INFO - Final context length: 29583
+2025-04-21 01:38:26,425 - INFO - Sending prompt to Gemini...
+2025-04-21 01:38:26,425 - INFO - Sending request to Gemini API with prompt length: 29788
+2025-04-21 01:38:29,333 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, SCSVMV University had an event called \"Brilliant Ideas of Students – BIOS’25\".\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTEN
+2025-04-21 01:38:29,333 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:38:29,333 - INFO - Generated response length: 114
+2025-04-21 01:38:29,336 - INFO - Received response from Gemini
+2025-04-21 01:38:51,750 - INFO - Received chat request
+2025-04-21 01:38:51,751 - INFO - Processing message: what is the admission process... in english
+2025-04-21 01:38:51,751 - INFO - Searching MongoDB with query: what is the admission process requirements eligibility criteria admission qualification entrance
+2025-04-21 01:38:51,751 - INFO - Expanded search terms: requirements eligibility criteria admission qualification entrance
+2025-04-21 01:38:51,811 - INFO - Found 5 documents matching the search
+2025-04-21 01:38:51,811 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/#content
+2025-04-21 01:38:51,812 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:51,812 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/
+2025-04-21 01:38:51,812 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:51,813 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/#content
+2025-04-21 01:38:51,813 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:51,813 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/
+2025-04-21 01:38:51,813 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:38:51,813 - INFO - Processing document with score 4.861473203574857 from URL https://kanchiuniv.ac.in/application2022/knowyourschloarship.php
+2025-04-21 01:38:51,814 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:38:51,814 - INFO - Final context length: 61697
+2025-04-21 01:38:51,814 - INFO - Sending prompt to Gemini...
+2025-04-21 01:38:51,814 - INFO - Sending request to Gemini API with prompt length: 61921
+2025-04-21 01:38:56,983 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, here's a breakdown of the admission process at SCSVMV University, specifically for the MBA program, and some general points:\n\n**MBA Admission (Full Time):**\n\n1.  **Eligibility:**\n    *   Any recognized UG Degree with a minimum of 50% aggregate marks.\n    *   A desirable score in any National level entrance exam like ATMA, CAT, JCET, MAT, JMAT, XAT, or the test
+2025-04-21 01:38:56,984 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:38:56,984 - INFO - Generated response length: 1928
+2025-04-21 01:38:56,986 - INFO - Received response from Gemini
+2025-04-21 01:39:29,548 - INFO - Received chat request
+2025-04-21 01:39:29,550 - INFO - Processing message: what is the admission process for ug cse... in english
+2025-04-21 01:39:29,550 - INFO - Searching MongoDB with query: what is the admission process for ug cse requirements eligibility criteria admission qualification entrance
+2025-04-21 01:39:29,550 - INFO - Expanded search terms: requirements eligibility criteria admission qualification entrance
+2025-04-21 01:39:29,577 - INFO - Found 5 documents matching the search
+2025-04-21 01:39:29,577 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/#content
+2025-04-21 01:39:29,577 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:39:29,578 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/
+2025-04-21 01:39:29,578 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:39:29,578 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/#content
+2025-04-21 01:39:29,578 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:39:29,578 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/
+2025-04-21 01:39:29,578 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:39:29,578 - INFO - Processing document with score 4.861473203574857 from URL https://kanchiuniv.ac.in/application2022/knowyourschloarship.php
+2025-04-21 01:39:29,578 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:39:29,579 - INFO - Final context length: 61697
+2025-04-21 01:39:29,579 - INFO - Sending prompt to Gemini...
+2025-04-21 01:39:29,579 - INFO - Sending request to Gemini API with prompt length: 61932
+2025-04-21 01:39:33,110 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but there is no information about UG CSE program. However, you can find the admission process for other courses on https://kanchiuniv.ac.in/application2022/knowyourschloarship.php.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBL
+2025-04-21 01:39:33,110 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:39:33,110 - INFO - Generated response length: 193
+2025-04-21 01:39:33,112 - INFO - Received response from Gemini
+2025-04-21 01:40:31,257 - INFO - Configuring Gemini API...
+2025-04-21 01:40:31,269 - INFO - Successfully connected to MongoDB
+2025-04-21 01:40:31,313 - INFO - Configuring Gemini API...
+2025-04-21 01:40:31,323 - INFO - Successfully connected to MongoDB
+2025-04-21 01:40:45,923 - INFO - Received chat request
+2025-04-21 01:40:45,924 - INFO - Processing message: what is the admission process for ug cse... in english
+2025-04-21 01:40:45,924 - INFO - Searching MongoDB with query: what is the admission process for ug cse requirements eligibility criteria admission qualification entrance
+2025-04-21 01:40:45,925 - INFO - Expanded search terms: requirements eligibility criteria admission qualification entrance
+2025-04-21 01:40:46,015 - INFO - Found 5 documents matching the search
+2025-04-21 01:40:46,016 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/
+2025-04-21 01:40:46,016 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:40:46,017 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/#content
+2025-04-21 01:40:46,017 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:40:46,017 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/
+2025-04-21 01:40:46,018 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:40:46,018 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/#content
+2025-04-21 01:40:46,018 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:40:46,018 - INFO - Processing document with score 4.861473203574857 from URL https://kanchiuniv.ac.in/application2022/knowyourschloarship.php
+2025-04-21 01:40:46,018 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:40:46,019 - INFO - Final context length: 61697
+2025-04-21 01:40:46,019 - INFO - Sending prompt to Gemini...
+2025-04-21 01:40:46,019 - INFO - Sending request to Gemini API with prompt length: 61932
+2025-04-21 01:40:50,314 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided documents do not contain information about the admission process for UG CSE (Undergraduate Computer Science and Engineering) specifically. However, they do provide some general information about admissions at SCSVMV University.\n\nHere's what can be gathered from the documents:\n\n*   **General Admission Information:** The university has an \"Admission Procedure\" page (mentioned under t
+2025-04-21 01:40:50,314 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:40:50,315 - INFO - Generated response length: 1310
+2025-04-21 01:40:50,317 - INFO - Received response from Gemini
+2025-04-21 01:41:31,242 - INFO - Received chat request
+2025-04-21 01:41:31,243 - INFO - Processing message: fee structure... in english
+2025-04-21 01:41:31,243 - INFO - Searching MongoDB with query: fee structure fees cost payment structure semester annual charges
+2025-04-21 01:41:31,243 - INFO - Expanded search terms: fee structure fees cost payment structure semester annual charges
+2025-04-21 01:41:31,605 - INFO - Found 5 documents matching the search
+2025-04-21 01:41:31,606 - INFO - Processing document with score 6.805092508478682 from URL https://kanchiuniv.ac.in/campus-life/fee-payment-portal/#content
+2025-04-21 01:41:31,606 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:41:31,606 - INFO - Processing document with score 6.805092508478682 from URL https://kanchiuniv.ac.in/campus-life/fee-payment-portal/
+2025-04-21 01:41:31,606 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:41:31,606 - INFO - Processing document with score 6.011289169546051 from URL https://kanchiuniv.ac.in/academics/department-of-electrical-and-electronics-engineering/time-table-eee/
+2025-04-21 01:41:31,606 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:41:31,606 - INFO - Processing document with score 6.011289169546051 from URL https://kanchiuniv.ac.in/academics/department-of-electrical-and-electronics-engineering/time-table-eee/#content
+2025-04-21 01:41:31,606 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:41:31,607 - INFO - Processing document with score 5.955502352559609 from URL https://kanchiuniv.ac.in/admission/scholarship_details/
+2025-04-21 01:41:31,607 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:41:31,607 - INFO - Final context length: 27820
+2025-04-21 01:41:31,607 - INFO - Sending prompt to Gemini...
+2025-04-21 01:41:31,607 - INFO - Sending request to Gemini API with prompt length: 28028
+2025-04-21 01:41:38,822 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "SCSVMV University provides a detailed fee structure and scholarship details on their website. Here's a summary of the fee information available, broken down by course category:\n\n**Engineering (BE/B.Tech)**\n\n*   **Scholarship Schemes:** The semester fee varies based on PCM (Physics, Chemistry, Mathematics) percentage in HSC (Higher Secondary Certificate) or JEE Mains qualification.\n    *   Scheme
+2025-04-21 01:41:38,823 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:41:38,824 - INFO - Generated response length: 2718
+2025-04-21 01:41:38,827 - INFO - Received response from Gemini
+2025-04-21 01:42:59,575 - INFO - Received chat request
+2025-04-21 01:42:59,576 - INFO - Processing message: fee structure for cse... in english
+2025-04-21 01:42:59,576 - INFO - Searching MongoDB with query: fee structure for cse fees cost payment structure semester annual charges
+2025-04-21 01:42:59,576 - INFO - Expanded search terms: fee structure for cse fees cost payment structure semester annual charges
+2025-04-21 01:42:59,843 - INFO - Found 5 documents matching the search
+2025-04-21 01:42:59,844 - INFO - Processing document with score 6.952704518624591 from URL https://kanchiuniv.ac.in/admission/scholarship_details/?
+2025-04-21 01:42:59,844 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:42:59,844 - INFO - Processing document with score 6.952704518624591 from URL https://kanchiuniv.ac.in/admission/scholarship_details/#content
+2025-04-21 01:42:59,845 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:42:59,845 - INFO - Processing document with score 6.952704518624591 from URL https://kanchiuniv.ac.in/admission/scholarship_details/
+2025-04-21 01:42:59,845 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:42:59,845 - INFO - Processing document with score 6.805092508478682 from URL https://kanchiuniv.ac.in/campus-life/fee-payment-portal/#content
+2025-04-21 01:42:59,845 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:42:59,845 - INFO - Processing document with score 6.805092508478682 from URL https://kanchiuniv.ac.in/campus-life/fee-payment-portal/
+2025-04-21 01:42:59,845 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:42:59,845 - INFO - Final context length: 32388
+2025-04-21 01:42:59,845 - INFO - Sending prompt to Gemini...
+2025-04-21 01:42:59,845 - INFO - Sending request to Gemini API with prompt length: 32604
+2025-04-21 01:43:04,228 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The fee structure for Computer Science and Engineering (CSE) at SCSVMV University depends on the student's HSC (Higher Secondary Certificate) score in Physics, Chemistry, and Mathematics (PCM) or JEE Mains qualification. Here's a breakdown:\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):** BE-CSE Semester fee is ₹ 50,000.\n*   **Scholarship Scheme II (PCM 75% to 89.9 % i
+2025-04-21 01:43:04,228 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:43:04,228 - INFO - Generated response length: 860
+2025-04-21 01:43:04,230 - INFO - Received response from Gemini
+2025-04-21 01:44:04,890 - INFO - Received chat request
+2025-04-21 01:44:04,892 - INFO - Processing message: what is the fee for four years for cse... in english
+2025-04-21 01:44:04,893 - INFO - Searching MongoDB with query: what is the fee for four years for cse fees cost payment structure semester annual charges
+2025-04-21 01:44:04,893 - INFO - Expanded search terms: what is the fee for four years for cse fees cost payment structure semester annual charges
+2025-04-21 01:44:05,111 - INFO - Found 5 documents matching the search
+2025-04-21 01:44:05,111 - INFO - Processing document with score 8.271549494877132 from URL https://kanchiuniv.ac.in/campus-life/academic-calendar/
+2025-04-21 01:44:05,111 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:44:05,111 - INFO - Processing document with score 8.271549494877132 from URL https://kanchiuniv.ac.in/campus-life/academic-calendar/#content
+2025-04-21 01:44:05,111 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:44:05,111 - INFO - Processing document with score 7.854950554033123 from URL https://kanchiuniv.ac.in/academics/department-of-electrical-and-electronics-engineering/time-table-eee/#content
+2025-04-21 01:44:05,111 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:44:05,111 - INFO - Processing document with score 7.854950554033123 from URL https://kanchiuniv.ac.in/academics/department-of-electrical-and-electronics-engineering/time-table-eee/
+2025-04-21 01:44:05,112 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:44:05,112 - INFO - Processing document with score 7.703787551115566 from URL https://kanchiuniv.ac.in/admission/scholarship_details/#content
+2025-04-21 01:44:05,112 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:44:05,112 - INFO - Final context length: 28364
+2025-04-21 01:44:05,112 - INFO - Sending prompt to Gemini...
+2025-04-21 01:44:05,112 - INFO - Sending request to Gemini API with prompt length: 28597
+2025-04-21 01:44:09,221 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, here's how we can estimate the fees for a four-year BE-CSE (Computer Science and Engineering) program at SCSVMV University, considering the available scholarship schemes:\n\n**Assumptions:**\n\n*   We'll assume the fees remain consistent across all four years (8 semesters).\n*   We'll calculate based on the semester fees and then multiply by 8.\n*   We'll include th
+2025-04-21 01:44:09,221 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:44:09,221 - INFO - Generated response length: 1511
+2025-04-21 01:44:09,223 - INFO - Received response from Gemini
+2025-04-21 01:45:33,732 - INFO - Configuring Gemini API...
+2025-04-21 01:45:33,749 - INFO - Successfully connected to MongoDB
+2025-04-21 01:45:33,993 - INFO - Configuring Gemini API...
+2025-04-21 01:45:34,036 - INFO - Successfully connected to MongoDB
+2025-04-21 01:46:32,243 - INFO - Configuring Gemini API...
+2025-04-21 01:46:32,250 - INFO - Successfully connected to MongoDB
+2025-04-21 01:46:32,436 - INFO - Configuring Gemini API...
+2025-04-21 01:46:32,458 - INFO - Successfully connected to MongoDB
+2025-04-21 01:53:26,190 - INFO - Configuring Gemini API...
+2025-04-21 01:53:26,203 - INFO - Successfully connected to MongoDB
+2025-04-21 01:53:26,245 - INFO - Configuring Gemini API...
+2025-04-21 01:53:26,253 - INFO - Successfully connected to MongoDB
+2025-04-21 01:53:53,990 - INFO - Received chat request
+2025-04-21 01:53:53,990 - INFO - Processing message: what is the fee for four years for cse... in english
+2025-04-21 01:53:53,991 - INFO - Searching MongoDB with query: what is the fee for four years for cse fees cost payment structure semester annual charges
+2025-04-21 01:53:53,991 - INFO - Expanded search terms: what is the fee for four years for cse fees cost payment structure semester annual charges
+2025-04-21 01:53:54,208 - INFO - Found 5 documents matching the search
+2025-04-21 01:53:54,208 - INFO - Processing document with score 8.271549494877132 from URL https://kanchiuniv.ac.in/campus-life/academic-calendar/
+2025-04-21 01:53:54,208 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:53:54,209 - INFO - Processing document with score 8.271549494877132 from URL https://kanchiuniv.ac.in/campus-life/academic-calendar/#content
+2025-04-21 01:53:54,209 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:53:54,209 - INFO - Processing document with score 7.854950554033123 from URL https://kanchiuniv.ac.in/academics/department-of-electrical-and-electronics-engineering/time-table-eee/
+2025-04-21 01:53:54,209 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:53:54,209 - INFO - Processing document with score 7.854950554033123 from URL https://kanchiuniv.ac.in/academics/department-of-electrical-and-electronics-engineering/time-table-eee/#content
+2025-04-21 01:53:54,209 - INFO - Added 1 relevant paragraphs from document
+2025-04-21 01:53:54,209 - INFO - Processing document with score 7.703787551115566 from URL https://kanchiuniv.ac.in/admission/scholarship_details/
+2025-04-21 01:53:54,209 - INFO - Added 3 relevant paragraphs from document
+2025-04-21 01:53:54,209 - INFO - Final context length: 28356
+2025-04-21 01:53:54,209 - INFO - Sending prompt to Gemini...
+2025-04-21 01:53:54,209 - INFO - Sending request to Gemini API with prompt length: 28589
+2025-04-21 01:53:58,955 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "To determine the fee for four years of BE-CSE at SCSVMV, we need to consider the scholarship schemes and the total number of semesters.\n\nBased on the \"Scholarship Details – SCSVMV Deemed to be University\" data, the semester fees for BE-CSE vary depending on the PCM percentage in HSC:\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):** 50,000 / – per semester\n*   **Sch
+2025-04-21 01:53:58,956 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-21 01:53:58,956 - INFO - Generated response length: 1281
+2025-04-21 01:53:58,958 - INFO - Received response from Gemini
+2025-04-21 01:54:36,952 - INFO - Received chat request
+2025-04-21 01:54:36,953 - INFO - Processing message: cse faculty... in english
+2025-04-21 01:56:39,527 - INFO - Configuring Gemini API...
+2025-04-21 01:56:39,543 - INFO - Successfully connected to MongoDB
+2025-04-21 01:56:39,586 - INFO - Configuring Gemini API...
+2025-04-21 01:56:39,593 - INFO - Successfully connected to MongoDB
+2025-04-21 01:59:00,956 - INFO - Configuring Gemini API...
+2025-04-21 01:59:00,972 - INFO - Successfully connected to MongoDB
+2025-04-21 01:59:01,016 - INFO - Configuring Gemini API...
+2025-04-21 01:59:01,023 - INFO - Successfully connected to MongoDB
+2025-04-21 02:00:53,191 - INFO - Configuring Gemini API...
+2025-04-21 02:00:53,218 - INFO - Successfully connected to MongoDB
+2025-04-21 02:00:53,488 - INFO - Configuring Gemini API...
+2025-04-21 02:00:53,516 - INFO - Successfully connected to MongoDB
+2025-04-21 02:01:11,108 - INFO - Received chat request
+2025-04-21 02:01:11,109 - INFO - Processing message: contact details... in english
+2025-04-21 02:02:14,107 - INFO - Configuring Gemini API...
+2025-04-21 02:02:14,114 - INFO - Successfully connected to MongoDB
+2025-04-21 02:02:14,158 - INFO - Configuring Gemini API...
+2025-04-21 02:02:14,165 - INFO - Successfully connected to MongoDB
+2025-04-22 00:19:07,934 - INFO - Received chat request
+2025-04-22 00:19:07,935 - INFO - Processing message: hi... in english
+2025-04-22 00:19:21,324 - INFO - Received chat request
+2025-04-22 00:19:21,325 - INFO - Processing message: who is the hod of cse... in english
+2025-04-22 00:21:55,673 - INFO - Received chat request
+2025-04-22 00:21:55,677 - INFO - Processing message: what is the fee for cse... in english
+2025-04-22 00:21:55,678 - INFO - Searching MongoDB with query: what is the fee for cse fees cost payment structure semester annual charges
+2025-04-22 00:21:55,678 - INFO - Expanded search terms: what is the fee for cse fees cost payment structure semester annual charges
+2025-04-22 00:21:56,826 - INFO - Found 5 documents matching the search
+2025-04-22 00:21:56,827 - INFO - Processing document with score 6.952704518624591 from URL https://kanchiuniv.ac.in/admission/scholarship_details/?
+2025-04-22 00:21:56,828 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:21:56,828 - INFO - Processing document with score 6.952704518624591 from URL https://kanchiuniv.ac.in/admission/scholarship_details/#content
+2025-04-22 00:21:56,829 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:21:56,829 - INFO - Processing document with score 6.952704518624591 from URL https://kanchiuniv.ac.in/admission/scholarship_details/
+2025-04-22 00:21:56,829 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:21:56,829 - INFO - Processing document with score 6.805092508478682 from URL https://kanchiuniv.ac.in/campus-life/fee-payment-portal/
+2025-04-22 00:21:56,830 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:21:56,830 - INFO - Processing document with score 6.805092508478682 from URL https://kanchiuniv.ac.in/campus-life/fee-payment-portal/#content
+2025-04-22 00:21:56,830 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:21:56,830 - INFO - Final context length: 32481
+2025-04-22 00:21:56,830 - INFO - Sending prompt to Gemini...
+2025-04-22 00:21:56,830 - INFO - Sending request to Gemini API with prompt length: 32699
+2025-04-22 00:21:59,601 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The fee for BE-CSE depends on the scholarship scheme a student is eligible for:\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):** Rs. 50,000 per semester\n*   **Scholarship Scheme II (PCM 75% to 89.9 % in HSC):** Rs. 65,000 per semester\n*   **Scholarship Scheme III (PCM 60% to 74.9% in HSC):** Rs. 75,000 per semester\n*   **Scholarship Scheme IV (PCM Less than 60 % in H
+2025-04-22 00:21:59,601 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-22 00:21:59,602 - INFO - Generated response length: 656
+2025-04-22 00:21:59,604 - INFO - Received response from Gemini
+2025-04-22 00:22:59,184 - INFO - Received chat request
+2025-04-22 00:22:59,185 - INFO - Processing message: what is the fee for cse for 1 year... in english
+2025-04-22 00:22:59,185 - INFO - Searching MongoDB with query: what is the fee for cse for 1 year fees cost payment structure semester annual charges
+2025-04-22 00:22:59,185 - INFO - Expanded search terms: what is the fee for cse for 1 year fees cost payment structure semester annual charges
+2025-04-22 00:23:18,927 - INFO - Found 5 documents matching the search
+2025-04-22 00:23:18,932 - INFO - Processing document with score 8.772394089471726 from URL https://kanchiuniv.ac.in/campus-life/academic-calendar/#content
+2025-04-22 00:23:18,933 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:23:18,933 - INFO - Processing document with score 8.772394089471726 from URL https://kanchiuniv.ac.in/campus-life/academic-calendar/
+2025-04-22 00:23:18,933 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:23:18,933 - INFO - Processing document with score 8.643995132343003 from URL https://kanchiuniv.ac.in/admission/scholarship_details/
+2025-04-22 00:23:18,934 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:23:18,934 - INFO - Processing document with score 8.643995132343003 from URL https://kanchiuniv.ac.in/admission/scholarship_details/#content
+2025-04-22 00:23:18,934 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:23:18,934 - INFO - Processing document with score 8.643995132343003 from URL https://kanchiuniv.ac.in/admission/scholarship_details/?
+2025-04-22 00:23:18,935 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:23:18,935 - INFO - Final context length: 33299
+2025-04-22 00:23:18,936 - INFO - Sending prompt to Gemini...
+2025-04-22 00:23:18,936 - INFO - Sending request to Gemini API with prompt length: 33528
+2025-04-22 00:23:23,315 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The information provided details the semester fees for BE-CSE under various scholarship schemes for the academic year 2025-2026. To calculate the approximate annual fee (for one year), we need to double the semester fee and add the one-time admission fee.\n\nHere's a breakdown based on HSC/JEE Mains performance:\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):**\n    *   
+2025-04-22 00:23:23,316 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-22 00:23:23,316 - INFO - Generated response length: 1151
+2025-04-22 00:23:23,317 - INFO - Received response from Gemini
+2025-04-22 00:24:05,846 - INFO - Received chat request
+2025-04-22 00:24:05,851 - INFO - Processing message: cse faculty... in english
+2025-04-22 00:25:29,341 - INFO - Received chat request
+2025-04-22 00:25:29,342 - INFO - Processing message: mba lateral entry... in english
+2025-04-22 00:25:29,342 - INFO - Searching MongoDB with query: mba lateral entry requirements eligibility criteria admission qualification entrance
+2025-04-22 00:25:29,342 - INFO - Expanded search terms: requirements eligibility criteria admission qualification entrance
+2025-04-22 00:25:29,405 - INFO - Found 5 documents matching the search
+2025-04-22 00:25:29,405 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/#content
+2025-04-22 00:25:29,405 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:29,405 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/
+2025-04-22 00:25:29,405 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:29,405 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/
+2025-04-22 00:25:29,406 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:29,406 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/#content
+2025-04-22 00:25:29,406 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:29,406 - INFO - Processing document with score 4.861473203574857 from URL https://kanchiuniv.ac.in/application2022/knowyourschloarship.php
+2025-04-22 00:25:29,407 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:25:29,407 - INFO - Final context length: 61697
+2025-04-22 00:25:29,407 - INFO - Sending prompt to Gemini...
+2025-04-22 00:25:29,407 - INFO - Sending request to Gemini API with prompt length: 61909
+2025-04-22 00:25:32,953 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The Department of Management Studies at SCSVMV University offers a \"Postgraduate MBA (Lateral Entry)\" program which is a One year MBA program for Engineers.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          
+2025-04-22 00:25:32,954 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-22 00:25:32,954 - INFO - Generated response length: 157
+2025-04-22 00:25:32,958 - INFO - Received response from Gemini
+2025-04-22 00:25:52,438 - INFO - Received chat request
+2025-04-22 00:25:52,439 - INFO - Processing message: what is the fee for mba lateral entry... in english
+2025-04-22 00:25:52,439 - INFO - Searching MongoDB with query: what is the fee for mba lateral entry requirements eligibility criteria admission qualification entrance fees cost payment structure semester annual charges
+2025-04-22 00:25:52,439 - INFO - Expanded search terms: requirements eligibility criteria admission qualification entrance
+2025-04-22 00:25:52,492 - INFO - Found 5 documents matching the search
+2025-04-22 00:25:52,492 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/#content
+2025-04-22 00:25:52,493 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:52,493 - INFO - Processing document with score 7.2579090809160896 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/placements/
+2025-04-22 00:25:52,493 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:52,493 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/
+2025-04-22 00:25:52,493 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:52,493 - INFO - Processing document with score 5.764060068724066 from URL https://kanchiuniv.ac.in/academics/department-of-management-studies/academic-programmes/#content
+2025-04-22 00:25:52,493 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 00:25:52,493 - INFO - Processing document with score 4.861473203574857 from URL https://kanchiuniv.ac.in/application2022/knowyourschloarship.php
+2025-04-22 00:25:52,494 - INFO - Added 3 relevant paragraphs from document
+2025-04-22 00:25:52,494 - INFO - Final context length: 61697
+2025-04-22 00:25:52,494 - INFO - Sending prompt to Gemini...
+2025-04-22 00:25:52,494 - INFO - Sending request to Gemini API with prompt length: 61929
+2025-04-22 00:25:55,881 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but I cannot find the answer to your question about the fee for MBA lateral entry at SCSVMV University. The provided documents do not contain information about the specific fees for the MBA lateral entry program.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+   
+2025-04-22 00:25:55,882 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-22 00:25:55,882 - INFO - Generated response length: 225
+2025-04-22 00:25:55,883 - INFO - Received response from Gemini
+2025-04-22 00:28:48,257 - INFO - Configuring Gemini API...
+2025-04-22 00:28:48,272 - INFO - Successfully connected to MongoDB
+2025-04-22 00:28:48,318 - INFO - Configuring Gemini API...
+2025-04-22 00:28:48,325 - INFO - Successfully connected to MongoDB
+2025-04-22 00:29:05,558 - INFO - Configuring Gemini API...
+2025-04-22 00:29:05,568 - INFO - Successfully connected to MongoDB
+2025-04-22 00:29:05,608 - INFO - Configuring Gemini API...
+2025-04-22 00:29:05,615 - INFO - Successfully connected to MongoDB
+2025-04-22 13:11:51,551 - INFO - Received chat request
+2025-04-22 13:11:51,553 - INFO - Processing message: hos cse... in english
+2025-04-22 13:11:51,553 - INFO - Searching MongoDB with query: hos cse
+2025-04-22 13:11:51,553 - INFO - Expanded search terms: hos cse
+2025-04-22 13:11:51,955 - INFO - Found 5 documents matching the search
+2025-04-22 13:11:51,955 - INFO - Processing document with score 2.4778901734104046 from URL https://kanchiuniv.ac.in/cse/#respond
+2025-04-22 13:11:51,956 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 13:11:51,956 - INFO - Processing document with score 2.4778901734104046 from URL https://kanchiuniv.ac.in/cse/#content
+2025-04-22 13:11:51,956 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 13:11:51,956 - INFO - Processing document with score 2.4778901734104046 from URL https://kanchiuniv.ac.in/cse/
+2025-04-22 13:11:51,956 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 13:11:51,956 - INFO - Processing document with score 1.9489709443099272 from URL https://kanchiuniv.ac.in/academics/department-of-computer-science-and-engineering/supporting-staff-department-of-cse/#content
+2025-04-22 13:11:51,956 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 13:11:51,956 - INFO - Processing document with score 1.9489709443099272 from URL https://kanchiuniv.ac.in/academics/department-of-computer-science-and-engineering/supporting-staff-department-of-cse/
+2025-04-22 13:11:51,956 - INFO - Added 1 relevant paragraphs from document
+2025-04-22 13:11:51,956 - INFO - Final context length: 25800
+2025-04-22 13:11:51,957 - INFO - Sending prompt to Gemini...
+2025-04-22 13:11:51,957 - INFO - Sending request to Gemini API with prompt length: 26002
+2025-04-22 13:11:54,640 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but the query \"hos cse\" is not understandable from the context provided. Can you please rephrase your question?\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGER
+2025-04-22 13:11:54,640 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-22 13:11:54,640 - INFO - Generated response length: 124
+2025-04-22 13:11:54,642 - INFO - Received response from Gemini
+2025-04-22 13:11:58,668 - INFO - Received chat request
+2025-04-22 13:11:58,669 - INFO - Processing message: cse hod... in english
+2025-04-24 16:12:22,132 - INFO - Configuring Gemini API...
+2025-04-24 16:12:22,148 - INFO - Successfully connected to MongoDB
+2025-04-24 16:12:22,182 - INFO - Starting server on port 5003
+2025-04-24 16:12:22,741 - INFO - Configuring Gemini API...
+2025-04-24 16:12:22,747 - INFO - Successfully connected to MongoDB
+2025-04-24 16:12:22,785 - INFO - Configuring Gemini API...
+2025-04-24 16:12:22,792 - INFO - Successfully connected to MongoDB
+2025-04-24 16:12:29,311 - INFO - Received chat request
+2025-04-24 16:12:29,312 - INFO - Processing message: what are the courses offered?... in english
+2025-04-24 16:12:29,312 - INFO - Searching MongoDB with query: what are the courses offered? courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-04-24 16:12:29,312 - INFO - Expanded search terms: courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-04-24 16:12:48,980 - INFO - Found 5 documents matching the search
+2025-04-24 16:12:48,986 - INFO - Processing document with score 23.086271873815946 from URL https://kanchiuniv.ac.in/application2022/knowyourschloarship.php
+2025-04-24 16:12:48,988 - INFO - Added 3 relevant paragraphs from document
+2025-04-24 16:12:48,988 - INFO - Processing document with score 15.345539419037333 from URL https://kanchiuniv.ac.in/placements-2020
+2025-04-24 16:12:48,989 - INFO - Added 1 relevant paragraphs from document
+2025-04-24 16:12:48,989 - INFO - Processing document with score 13.378171484056686 from URL https://kanchiuniv.ac.in/admission/courses-offered-and-eligibility/#content
+2025-04-24 16:12:48,989 - INFO - Added 1 relevant paragraphs from document
+2025-04-24 16:12:48,989 - INFO - Processing document with score 13.378171484056686 from URL https://kanchiuniv.ac.in/admission/courses-offered-and-eligibility/
+2025-04-24 16:12:48,989 - INFO - Added 1 relevant paragraphs from document
+2025-04-24 16:12:48,989 - INFO - Processing document with score 13.018564712285409 from URL https://kanchiuniv.ac.in/wp-content/uploads/2023/12/pat-2022_6.pdf
+2025-04-24 16:12:49,036 - INFO - Added 2 relevant paragraphs from document
+2025-04-24 16:12:49,036 - INFO - Final context length: 58198
+2025-04-24 16:12:49,036 - INFO - Sending prompt to Gemini...
+2025-04-24 16:12:49,036 - INFO - Sending request to Gemini API with prompt length: 58422
+2025-04-24 16:12:54,697 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "SCSVMV University offers a wide range of courses across various faculties. Here's a breakdown:\n\n**Undergraduate Courses:**\n\n*   **B.E. / B.Tech:**\n    *   Computer Science & Engineering\n    *   Civil Engineering\n    *   Electronics & Communication Engineering\n    *   Electrical & Electronics Engineering\n    *   Mechanical Engineering\n    *   Mechatronics Engineering\n    *   Information Tec
+2025-04-24 16:12:54,697 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-24 16:12:54,697 - INFO - Generated response length: 2859
+2025-04-24 16:12:54,699 - INFO - Received response from Gemini
+2025-04-24 16:15:14,532 - INFO - Configuring Gemini API...
+2025-04-24 16:15:14,546 - INFO - Successfully connected to MongoDB
+2025-04-24 16:15:14,593 - INFO - Configuring Gemini API...
+2025-04-24 16:15:14,599 - INFO - Successfully connected to MongoDB
+2025-04-24 16:16:40,921 - INFO - Configuring Gemini API...
+2025-04-24 16:16:40,932 - INFO - Successfully connected to MongoDB
+2025-04-24 16:16:40,965 - INFO - Starting server on port 5003
+2025-04-24 16:17:13,576 - INFO - Configuring Gemini API...
+2025-04-24 16:17:13,585 - INFO - Successfully connected to MongoDB
+2025-04-24 16:17:13,615 - INFO - Starting server on port 5003
+2025-04-24 16:17:14,101 - INFO - Configuring Gemini API...
+2025-04-24 16:17:14,108 - INFO - Successfully connected to MongoDB
+2025-04-24 16:17:14,142 - INFO - Configuring Gemini API...
+2025-04-24 16:17:14,150 - INFO - Successfully connected to MongoDB
+2025-04-24 16:18:12,543 - INFO - Received chat request
+2025-04-24 16:18:12,545 - INFO - Processing message: hi... in english
+2025-04-24 16:19:10,590 - INFO - Received chat request
+2025-04-24 16:19:10,594 - INFO - Processing message: what is the fee for sanskrit... in english
+2025-04-24 16:19:10,594 - INFO - Searching MongoDB with query: what is the fee for sanskrit fees cost payment structure semester annual charges
+2025-04-24 16:19:10,594 - INFO - Expanded search terms: 
+                fees fee structure charges payment
+                tuition hostel mess examination
+                semester annual registration development
+                
+2025-04-24 16:19:11,841 - INFO - Found 5 documents matching the search
+2025-04-24 16:19:11,842 - INFO - Processing document with score 14.945166886240136 from URL https://kanchiuniv.ac.in/admission/scholarship_details/#content
+2025-04-24 16:19:11,842 - INFO - Document title: Scholarship Details – SCSVMV Deemed to be University
+2025-04-24 16:19:11,843 - INFO - Added 3 relevant paragraphs from document
+2025-04-24 16:19:11,843 - INFO - Processing document with score 14.945166886240136 from URL https://kanchiuniv.ac.in/admission/scholarship_details/
+2025-04-24 16:19:11,843 - INFO - Document title: Scholarship Details – SCSVMV Deemed to be University
+2025-04-24 16:19:11,843 - INFO - Added 3 relevant paragraphs from document
+2025-04-24 16:19:11,843 - INFO - Processing document with score 14.945166886240136 from URL https://kanchiuniv.ac.in/admission/scholarship_details/?
+2025-04-24 16:19:11,843 - INFO - Document title: Scholarship Details – SCSVMV Deemed to be University
+2025-04-24 16:19:11,844 - INFO - Added 3 relevant paragraphs from document
+2025-04-24 16:19:11,844 - INFO - Processing document with score 9.860310724352436 from URL https://kanchiuniv.ac.in/academics/school-of-education/fee-structure/#content
+2025-04-24 16:19:11,844 - INFO - Document title: Fee Structure – SCSVMV Deemed to be University
+2025-04-24 16:19:11,844 - INFO - Added 1 relevant paragraphs from document
+2025-04-24 16:19:11,844 - INFO - Processing document with score 8.751954153415204 from URL https://kanchiuniv.ac.in/examination-cell/
+2025-04-24 16:19:11,844 - INFO - Document title: Examination Cell – SCSVMV Deemed to be University
+2025-04-24 16:19:11,844 - INFO - Added 1 relevant paragraphs from document
+2025-04-24 16:19:11,844 - INFO - Final context length: 43327
+2025-04-24 16:19:11,844 - INFO - Sending prompt to Gemini...
+2025-04-24 16:19:11,844 - INFO - Sending request to Gemini API with prompt length: 43550
+2025-04-24 16:19:14,240 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, here are the fees for Sanskrit courses at SCSVMV University:\n\n*   **BA Sanskrit:** Semester Fee is Rs. 500/- plus One Time fee to be paid at the time of admission (First semester only) Rs. 3,000/-\n*   **MA Sanskrit:** Semester Fee is Rs. 1,000/- plus One Time fee to be paid at the time of admission (First semester only) Rs. 3,000/-\n*   **M.A. Sanskrit :** 100% T
+2025-04-24 16:19:14,241 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-24 16:19:14,241 - INFO - Generated response length: 464
+2025-04-24 16:19:14,242 - INFO - Received response from Gemini
+2025-04-24 16:22:10,352 - INFO - Received chat request
+2025-04-24 16:22:10,354 - INFO - Processing message: what is the fee foe be cse... in english
+2025-04-24 16:22:10,355 - INFO - Searching MongoDB with query: what is the fee foe be cse fees cost payment structure semester annual charges
+2025-04-24 16:22:10,355 - INFO - Expanded search terms: 
+                fees fee structure charges payment
+                tuition hostel mess examination
+                semester annual registration development
+                
+2025-04-24 16:22:10,960 - INFO - Found 5 documents matching the search
+2025-04-24 16:22:10,961 - INFO - Processing document with score 14.945166886240136 from URL https://kanchiuniv.ac.in/admission/scholarship_details/#content
+2025-04-24 16:22:10,961 - INFO - Document title: Scholarship Details – SCSVMV Deemed to be University
+2025-04-24 16:22:10,962 - INFO - Added 3 relevant paragraphs from document
+2025-04-24 16:22:10,962 - INFO - Processing document with score 14.945166886240136 from URL https://kanchiuniv.ac.in/admission/scholarship_details/
+2025-04-24 16:22:10,962 - INFO - Document title: Scholarship Details – SCSVMV Deemed to be University
+2025-04-24 16:22:10,963 - INFO - Added 3 relevant paragraphs from document
+2025-04-24 16:22:10,963 - INFO - Processing document with score 14.945166886240136 from URL https://kanchiuniv.ac.in/admission/scholarship_details/?
+2025-04-24 16:22:10,963 - INFO - Document title: Scholarship Details – SCSVMV Deemed to be University
+2025-04-24 16:22:10,964 - INFO - Added 3 relevant paragraphs from document
+2025-04-24 16:22:10,964 - INFO - Processing document with score 9.860310724352436 from URL https://kanchiuniv.ac.in/academics/school-of-education/fee-structure/
+2025-04-24 16:22:10,964 - INFO - Document title: Fee Structure – SCSVMV Deemed to be University
+2025-04-24 16:22:10,964 - INFO - Added 1 relevant paragraphs from document
+2025-04-24 16:22:10,964 - INFO - Processing document with score 8.751954153415204 from URL https://kanchiuniv.ac.in/examination-cell/#content
+2025-04-24 16:22:10,964 - INFO - Document title: Examination Cell – SCSVMV Deemed to be University
+2025-04-24 16:22:10,965 - INFO - Added 1 relevant paragraphs from document
+2025-04-24 16:22:10,965 - INFO - Final context length: 43327
+2025-04-24 16:22:10,965 - INFO - Sending prompt to Gemini...
+2025-04-24 16:22:10,965 - INFO - Sending request to Gemini API with prompt length: 43548
+2025-04-24 16:22:15,132 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The semester fee for BE-CSE at SCSVMV University depends on the student's PCM score in HSC (Higher Secondary Certificate) or whether they qualified in JEE Mains, according to the scholarship schemes:\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):** Rs. 50,000\n*   **Scholarship Scheme II (PCM 75% to 89.9 % in HSC):** Rs. 65,000\n*   **Scholarship Scheme III (PCM 60% to 
+2025-04-24 16:22:15,133 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-04-24 16:22:15,133 - INFO - Generated response length: 1090
+2025-04-24 16:22:15,135 - INFO - Received response from Gemini
+2025-04-24 16:22:52,536 - INFO - Received chat request
+2025-04-24 16:22:52,537 - INFO - Processing message: faculty of sanskrit... in english
+2025-04-24 16:25:08,382 - INFO - Configuring Gemini API...
+2025-04-24 16:25:08,405 - INFO - Successfully connected to MongoDB
+2025-04-24 16:25:08,454 - INFO - Configuring Gemini API...
+2025-04-24 16:25:08,461 - INFO - Successfully connected to MongoDB
+2025-04-24 16:26:43,693 - INFO - Configuring Gemini API...
+2025-04-24 16:26:43,700 - INFO - Successfully connected to MongoDB
+2025-04-24 16:26:43,745 - INFO - Configuring Gemini API...
+2025-04-24 16:26:43,752 - INFO - Successfully connected to MongoDB
+2025-04-24 16:28:14,011 - INFO - Configuring Gemini API...
+2025-04-24 16:28:14,018 - INFO - Successfully connected to MongoDB
+2025-04-24 16:28:14,062 - INFO - Configuring Gemini API...
+2025-04-24 16:28:14,069 - INFO - Successfully connected to MongoDB
+2025-04-24 16:30:30,751 - INFO - Received chat request
+2025-04-24 16:30:30,752 - INFO - Processing message: faculty of sanskrit... in english
+2025-04-24 16:30:51,678 - INFO - Configuring Gemini API...
+2025-04-24 16:30:51,689 - INFO - Successfully connected to MongoDB
+2025-04-24 16:30:51,731 - INFO - Configuring Gemini API...
+2025-04-24 16:30:51,738 - INFO - Successfully connected to MongoDB
+2025-04-24 16:32:52,719 - INFO - Configuring Gemini API...
+2025-04-24 16:32:52,735 - INFO - Successfully connected to MongoDB
+2025-04-24 16:32:52,785 - INFO - Configuring Gemini API...
+2025-04-24 16:32:52,793 - INFO - Successfully connected to MongoDB
+2025-04-24 16:33:47,812 - INFO - Received chat request
+2025-04-24 16:33:47,812 - INFO - Processing message: faculty of sanskrit... in english
+2025-04-24 16:34:01,890 - INFO - Received chat request
+2025-04-24 16:34:01,890 - INFO - Processing message: faculty of sanskrit... in english
+2025-04-24 16:34:42,631 - INFO - Configuring Gemini API...
+2025-04-24 16:34:42,645 - INFO - Successfully connected to MongoDB
+2025-04-24 16:34:42,681 - INFO - Starting server on port 5003
+2025-04-24 16:34:43,184 - INFO - Configuring Gemini API...
+2025-04-24 16:34:43,191 - INFO - Successfully connected to MongoDB
+2025-04-24 16:34:43,225 - INFO - Configuring Gemini API...
+2025-04-24 16:34:43,233 - INFO - Successfully connected to MongoDB
