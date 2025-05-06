@@ -1,0 +1,698 @@
+2025-05-04 20:37:46,647 - INFO - Configuring Gemini API...
+2025-05-04 20:37:46,656 - INFO - Successfully connected to MongoDB
+2025-05-04 20:37:46,687 - INFO - Starting server on port 5003
+2025-05-04 20:58:01,149 - INFO - Configuring Gemini API...
+2025-05-04 20:58:01,167 - INFO - Successfully connected to MongoDB
+2025-05-04 20:58:01,237 - INFO - Starting server on port 5003
+2025-05-04 20:58:01,839 - INFO - Configuring Gemini API...
+2025-05-04 20:58:01,845 - INFO - Successfully connected to MongoDB
+2025-05-04 20:58:01,889 - INFO - Configuring Gemini API...
+2025-05-04 20:58:01,896 - INFO - Successfully connected to MongoDB
+2025-05-04 20:58:40,754 - INFO - Received chat request
+2025-05-04 20:58:40,754 - INFO - Processing message: hi... in english
+2025-05-04 20:58:52,615 - INFO - Received chat request
+2025-05-04 20:58:52,616 - INFO - Processing message: who is the hod of cse... in english
+2025-05-04 20:59:35,474 - INFO - Configuring Gemini API...
+2025-05-04 20:59:35,482 - INFO - Successfully connected to MongoDB
+2025-05-04 20:59:35,529 - INFO - Configuring Gemini API...
+2025-05-04 20:59:35,536 - INFO - Successfully connected to MongoDB
+2025-05-04 20:59:59,724 - INFO - Received chat request
+2025-05-04 20:59:59,724 - INFO - Processing message: who is the hod of cse... in english
+2025-05-04 21:30:27,487 - INFO - Received chat request
+2025-05-04 21:30:27,489 - INFO - Processing message: who is the hod of cse... in english
+2025-05-04 21:30:44,277 - INFO - Configuring Gemini API...
+2025-05-04 21:30:44,291 - INFO - Successfully connected to MongoDB
+2025-05-04 21:30:44,337 - INFO - Configuring Gemini API...
+2025-05-04 21:30:44,343 - INFO - Successfully connected to MongoDB
+2025-05-04 21:31:18,836 - INFO - Configuring Gemini API...
+2025-05-04 21:31:18,843 - INFO - Successfully connected to MongoDB
+2025-05-04 21:31:18,874 - INFO - Starting server on port 5003
+2025-05-04 21:31:19,431 - INFO - Configuring Gemini API...
+2025-05-04 21:31:19,437 - INFO - Successfully connected to MongoDB
+2025-05-04 21:31:19,473 - INFO - Configuring Gemini API...
+2025-05-04 21:31:19,482 - INFO - Successfully connected to MongoDB
+2025-05-04 21:31:54,499 - INFO - Received chat request
+2025-05-04 21:31:54,500 - INFO - Processing message: who is the hod of cse... in english
+2025-05-04 21:33:45,072 - INFO - Configuring Gemini API...
+2025-05-04 21:33:45,079 - INFO - Successfully connected to MongoDB
+2025-05-04 21:33:45,124 - INFO - Configuring Gemini API...
+2025-05-04 21:33:45,131 - INFO - Successfully connected to MongoDB
+2025-05-04 21:34:00,910 - INFO - Configuring Gemini API...
+2025-05-04 21:34:00,917 - INFO - Successfully connected to MongoDB
+2025-05-04 21:34:00,969 - INFO - Configuring Gemini API...
+2025-05-04 21:34:00,976 - INFO - Successfully connected to MongoDB
+2025-05-04 21:34:02,571 - INFO - Configuring Gemini API...
+2025-05-04 21:34:02,576 - INFO - Successfully connected to MongoDB
+2025-05-04 21:34:02,612 - INFO - Configuring Gemini API...
+2025-05-04 21:34:02,617 - INFO - Successfully connected to MongoDB
+2025-05-04 21:34:32,488 - INFO - Received chat request
+2025-05-04 21:34:32,488 - INFO - Processing message: who is the hod of cse... in english
+2025-05-04 21:34:51,869 - INFO - Received chat request
+2025-05-04 21:34:51,870 - INFO - Processing message: hod... in english
+2025-05-04 22:44:07,553 - INFO - Received chat request
+2025-05-04 22:44:07,553 - INFO - Processing message: what are the courses available... in english
+2025-05-04 22:44:07,554 - INFO - Searching MongoDB with query: what are the courses available courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-05-04 22:44:07,554 - INFO - Enhanced search terms: what are the courses available courses programs degrees offered b.tech m.tech mba mca bba bca ph.d undergraduate postgraduate course program degree specialization branch
+2025-05-04 22:44:16,261 - INFO - Sending prompt to Gemini...
+2025-05-04 22:44:16,263 - INFO - Sending request to Gemini API with prompt length: 57746
+2025-05-04 22:44:23,153 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "SCSVMV University offers a wide range of courses at the undergraduate, postgraduate, and research levels. Here's a breakdown:\n\n**Undergraduate Courses:**\n\n*   **B.E. / B.Tech:**\n    *   Computer Science & Engineering\n    *   Civil Engineering\n    *   Electronics & Communication Engineering\n    *   Electrical & Electronics Engineering\n    *   Mechanical Engineering\n    *   Mechatronics Engin
+2025-05-04 22:44:23,153 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-04 22:44:23,153 - INFO - Generated response length: 2292
+2025-05-04 22:44:23,156 - INFO - Received response from Gemini
+2025-05-04 22:44:42,014 - INFO - Received chat request
+2025-05-04 22:44:42,015 - INFO - Processing message: what are the engineering courses available... in english
+2025-05-04 22:44:42,015 - INFO - Searching MongoDB with query: what are the engineering courses available courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-05-04 22:44:42,015 - INFO - Enhanced search terms: what are the engineering courses available courses programs degrees offered b.tech m.tech mba mca bba bca ph.d undergraduate postgraduate course program degree specialization branch
+2025-05-04 22:44:45,056 - INFO - Sending prompt to Gemini...
+2025-05-04 22:44:45,056 - INFO - Sending request to Gemini API with prompt length: 68737
+2025-05-04 22:44:48,749 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided text, the following Engineering courses are available at SCSVMV University:\n\n**B.E./B.Tech Courses:**\n\n*   B.E. Computer Science & Engineering\n*   B.E. Civil Engineering\n*   B.E. Civil & Structural Engineering\n*   B.E. Electronics & Communication Engineering\n*   B.E. Electrical & Electronics Engineering\n*   B.E. Electronics & Instrumentation Engineering\n*   B.E. Mechan
+2025-05-04 22:44:48,750 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-04 22:44:48,750 - INFO - Generated response length: 627
+2025-05-04 22:44:48,752 - INFO - Received response from Gemini
+2025-05-04 22:47:16,714 - INFO - Configuring Gemini API...
+2025-05-04 22:47:16,726 - INFO - Successfully connected to MongoDB
+2025-05-04 22:47:16,818 - INFO - Starting server on port 5003
+2025-05-04 22:47:17,344 - INFO - Configuring Gemini API...
+2025-05-04 22:47:17,351 - INFO - Successfully connected to MongoDB
+2025-05-04 22:47:17,390 - INFO - Configuring Gemini API...
+2025-05-04 22:47:17,399 - INFO - Successfully connected to MongoDB
+2025-05-05 11:09:58,923 - INFO - Configuring Gemini API...
+2025-05-05 11:09:58,941 - INFO - Successfully connected to MongoDB
+2025-05-05 11:09:58,976 - INFO - Starting server on port 5003
+2025-05-05 11:09:59,489 - INFO - Configuring Gemini API...
+2025-05-05 11:09:59,497 - INFO - Successfully connected to MongoDB
+2025-05-05 11:09:59,535 - INFO - Configuring Gemini API...
+2025-05-05 11:09:59,543 - INFO - Successfully connected to MongoDB
+2025-05-05 11:10:36,220 - INFO - Received chat request
+2025-05-05 11:10:36,221 - INFO - Processing message: hi... in telugu
+2025-05-05 11:10:57,912 - INFO - Received chat request
+2025-05-05 11:10:57,913 - INFO - Processing message: what is the fee for be cse... in telugu
+2025-05-05 11:10:57,913 - INFO - Searching MongoDB with query: what is the fee for be cse fees cost payment structure semester annual charges
+2025-05-05 11:10:57,913 - INFO - Enhanced search terms: what is the fee for be cse fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-05 11:10:58,814 - INFO - Sending prompt to Gemini...
+2025-05-05 11:10:58,814 - INFO - Sending request to Gemini API with prompt length: 40138
+2025-05-05 11:11:01,960 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "క్షమించండి, ఫీజు గురించిన సమాచారం అందుబాటులో లేదు. మరింత సమాచారం కోసం మీరు విశ్వవిద్యాలయాన్ని సంప్రదించవచ్చు.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+  
+2025-05-05 11:11:01,961 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:11:01,961 - INFO - Generated response length: 110
+2025-05-05 11:11:01,963 - INFO - Received response from Gemini
+2025-05-05 11:11:26,160 - INFO - Received chat request
+2025-05-05 11:11:26,161 - INFO - Processing message: what is the fee for cse... in english
+2025-05-05 11:11:26,161 - INFO - Searching MongoDB with query: what is the fee for cse fees cost payment structure semester annual charges
+2025-05-05 11:11:26,161 - INFO - Enhanced search terms: what is the fee for cse fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-05 11:11:26,367 - INFO - Sending prompt to Gemini...
+2025-05-05 11:11:26,368 - INFO - Sending request to Gemini API with prompt length: 40136
+2025-05-05 11:11:29,197 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but I cannot find the specific fee structure for CSE in the provided context.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability
+2025-05-05 11:11:29,197 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:11:29,197 - INFO - Generated response length: 90
+2025-05-05 11:11:29,199 - INFO - Received response from Gemini
+2025-05-05 11:11:47,865 - INFO - Received chat request
+2025-05-05 11:11:47,867 - INFO - Processing message: fee... in english
+2025-05-05 11:11:47,867 - INFO - Searching MongoDB with query: fee fees cost payment structure semester annual charges
+2025-05-05 11:11:47,867 - INFO - Enhanced search terms: fee fees cost payment structure semester annual charges fee fees cost payment charges amount
+2025-05-05 11:11:47,954 - INFO - Sending prompt to Gemini...
+2025-05-05 11:11:47,954 - INFO - Sending request to Gemini API with prompt length: 40055
+2025-05-05 11:11:51,930 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, here's a summary regarding fees at SCSVMV University:\n\n*   **Fee Payment Portal:** The university has a dedicated Fee Payment Portal.\n*   **Fee Structure 2025-26:** Detailed fee structures for various courses are available for the academic year 2025-26.\n*   **Payment Methods:** The fee payment portal supports BBPS BILL Payment and also provides user manuals for 
+2025-05-05 11:11:51,931 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:11:51,931 - INFO - Generated response length: 926
+2025-05-05 11:11:51,934 - INFO - Received response from Gemini
+2025-05-05 11:12:14,906 - INFO - Received chat request
+2025-05-05 11:12:14,907 - INFO - Processing message: fee for cse... in english
+2025-05-05 11:12:14,907 - INFO - Searching MongoDB with query: fee for cse fees cost payment structure semester annual charges
+2025-05-05 11:12:14,908 - INFO - Enhanced search terms: fee for cse fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-05 11:12:15,198 - INFO - Sending prompt to Gemini...
+2025-05-05 11:12:15,198 - INFO - Sending request to Gemini API with prompt length: 40124
+2025-05-05 11:12:17,735 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but I cannot find the answer to this question from the context you provided.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability"
+2025-05-05 11:12:17,735 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:12:17,735 - INFO - Generated response length: 89
+2025-05-05 11:12:17,736 - INFO - Received response from Gemini
+2025-05-05 11:13:13,242 - INFO - Configuring Gemini API...
+2025-05-05 11:13:13,255 - INFO - Successfully connected to MongoDB
+2025-05-05 11:13:13,307 - INFO - Configuring Gemini API...
+2025-05-05 11:13:13,316 - INFO - Successfully connected to MongoDB
+2025-05-05 11:15:08,642 - INFO - Configuring Gemini API...
+2025-05-05 11:15:08,656 - INFO - Successfully connected to MongoDB
+2025-05-05 11:15:08,722 - INFO - Configuring Gemini API...
+2025-05-05 11:15:08,731 - INFO - Successfully connected to MongoDB
+2025-05-05 11:16:37,582 - INFO - Received chat request
+2025-05-05 11:16:37,582 - INFO - Processing message: fee for cse... in english
+2025-05-05 11:16:37,583 - INFO - Searching MongoDB with query: fee for cse fees cost payment structure semester annual charges
+2025-05-05 11:16:37,919 - INFO - Sending prompt to Gemini...
+2025-05-05 11:16:37,919 - INFO - Sending request to Gemini API with prompt length: 27363
+2025-05-05 11:16:39,998 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided text mentions a \"Fee Structure 2025-26\" under the Admission section. However, it also notes that fees are subject to change and to contact the admission office for the most current fee structure. To get the exact fee for Computer Science and Engineering (CSE), you should contact the admission office:\n\n*   **Email:** admission@kanchiuniv.ac.in\n*   **Phone:** (044) 27264285\n"
+       
+2025-05-05 11:16:39,998 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:16:39,998 - INFO - Generated response length: 388
+2025-05-05 11:16:40,000 - INFO - Received response from Gemini
+2025-05-05 11:17:44,707 - INFO - Configuring Gemini API...
+2025-05-05 11:17:44,714 - INFO - Successfully connected to MongoDB
+2025-05-05 11:17:44,765 - INFO - Configuring Gemini API...
+2025-05-05 11:17:44,773 - INFO - Successfully connected to MongoDB
+2025-05-05 11:18:03,693 - INFO - Received chat request
+2025-05-05 11:18:03,694 - INFO - Processing message: fee for cse... in english
+2025-05-05 11:18:03,694 - INFO - Searching MongoDB with query: fee for cse fees cost payment structure semester annual charges
+2025-05-05 11:18:03,909 - INFO - Sending prompt to Gemini...
+2025-05-05 11:18:03,910 - INFO - Sending request to Gemini API with prompt length: 27363
+2025-05-05 11:18:07,139 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The provided text contains information about SCSVMV University, including its departments, faculties, admission details, and fee payment portal. However, the exact fee for the Computer Science and Engineering (CSE) program is not explicitly stated.\n\nThe information suggests checking the \"Fee Structure 2025-26\" link under the \"Admission\" section. It also provides contact information (email and p
+2025-05-05 11:18:07,139 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:18:07,139 - INFO - Generated response length: 515
+2025-05-05 11:18:07,140 - INFO - Received response from Gemini
+2025-05-05 11:18:43,448 - INFO - Configuring Gemini API...
+2025-05-05 11:18:43,455 - INFO - Successfully connected to MongoDB
+2025-05-05 11:18:43,488 - INFO - Starting server on port 5003
+2025-05-05 11:18:43,996 - INFO - Configuring Gemini API...
+2025-05-05 11:18:44,002 - INFO - Successfully connected to MongoDB
+2025-05-05 11:18:44,036 - INFO - Configuring Gemini API...
+2025-05-05 11:18:44,044 - INFO - Successfully connected to MongoDB
+2025-05-05 11:19:15,406 - INFO - Received chat request
+2025-05-05 11:19:15,407 - INFO - Processing message: fee for be cse full time... in english
+2025-05-05 11:19:15,407 - INFO - Searching MongoDB with query: fee for be cse full time fees cost payment structure semester annual charges
+2025-05-05 11:19:15,657 - INFO - Sending prompt to Gemini...
+2025-05-05 11:19:15,657 - INFO - Sending request to Gemini API with prompt length: 27376
+2025-05-05 11:19:18,716 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but I cannot answer the question with the context information I have. While the documents mention \"Fee Structure 2025-26\" and a \"Fee Payment Portal\", the actual fee amounts for specific programs like BE CSE (Bachelor of Engineering in Computer Science and Engineering) are not provided.\n\nThe provided note suggests contacting the admission office directly for the most current fee stru
+2025-05-05 11:19:18,716 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:19:18,716 - INFO - Generated response length: 446
+2025-05-05 11:19:18,717 - INFO - Received response from Gemini
+2025-05-05 11:19:58,162 - INFO - Received chat request
+2025-05-05 11:19:58,164 - INFO - Processing message: what is the fee for be cse full time... in english
+2025-05-05 11:19:58,164 - INFO - Searching MongoDB with query: what is the fee for be cse full time fees cost payment structure semester annual charges
+2025-05-05 11:19:58,263 - INFO - Sending prompt to Gemini...
+2025-05-05 11:19:58,263 - INFO - Sending request to Gemini API with prompt length: 27388
+2025-05-05 11:20:00,495 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but I cannot provide the exact fee for the BE CSE (Bachelor of Engineering in Computer Science and Engineering) full-time program at SCSVMV University.\n\nBased on the provided context, while the university website mentions \"Fee Structure 2025-26,\" the actual fee amounts are not included in the text.\n\nThe provided context suggests contacting the admission office directly for the most 
+2025-05-05 11:20:00,496 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:20:00,496 - INFO - Generated response length: 523
+2025-05-05 11:20:00,499 - INFO - Received response from Gemini
+2025-05-05 11:20:46,298 - INFO - Configuring Gemini API...
+2025-05-05 11:20:46,395 - INFO - Successfully connected to MongoDB
+2025-05-05 11:20:46,552 - INFO - Configuring Gemini API...
+2025-05-05 11:20:46,566 - INFO - Successfully connected to MongoDB
+2025-05-05 11:20:48,226 - INFO - Configuring Gemini API...
+2025-05-05 11:20:48,232 - INFO - Successfully connected to MongoDB
+2025-05-05 11:20:48,280 - INFO - Configuring Gemini API...
+2025-05-05 11:20:48,297 - INFO - Successfully connected to MongoDB
+2025-05-05 11:21:02,464 - INFO - Received chat request
+2025-05-05 11:21:02,464 - INFO - Processing message: what is the fee for be cse full time... in english
+2025-05-05 11:21:02,465 - INFO - Searching MongoDB with query: what is the fee for be cse full time fees cost payment structure semester annual charges
+2025-05-05 11:21:02,692 - INFO - Enhanced search terms: what is the fee for be cse full time fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-05 11:21:04,587 - INFO - Sending prompt to Gemini...
+2025-05-05 11:21:04,587 - INFO - Sending request to Gemini API with prompt length: 42592
+2025-05-05 11:21:07,669 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The semester fee for B.E- CSE (Full time) varies depending on the scholarship scheme you are eligible for:\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):** Rs. 50,000\n*   **Scholarship Scheme II (PCM 75% to 89.9 % in HSC):** Rs. 65,000\n*   **Scholarship Scheme III (PCM 60% to 74.9% in HSC):** Rs. 75,000\n*   **Scholarship Scheme IV (PCM Less than 60 % in HSC):** Rs. 9
+2025-05-05 11:21:07,669 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:21:07,669 - INFO - Generated response length: 830
+2025-05-05 11:21:07,670 - INFO - Received response from Gemini
+2025-05-05 11:22:31,203 - INFO - Received chat request
+2025-05-05 11:22:31,204 - INFO - Processing message: hi... in telugu
+2025-05-05 11:22:54,957 - INFO - Received chat request
+2025-05-05 11:22:54,957 - INFO - Processing message: hi... in hindi
+2025-05-05 11:23:14,310 - INFO - Received chat request
+2025-05-05 11:23:14,311 - INFO - Processing message: hi... in tamil
+2025-05-05 11:28:57,592 - INFO - Received chat request
+2025-05-05 11:28:57,595 - INFO - Processing message: fee details... in english
+2025-05-05 11:28:57,596 - INFO - Searching MongoDB with query: fee details fees cost payment structure semester annual charges
+2025-05-05 11:28:57,780 - INFO - Enhanced search terms: fee details fees cost payment structure semester annual charges fee fees cost payment charges amount
+2025-05-05 11:28:58,075 - INFO - Sending prompt to Gemini...
+2025-05-05 11:28:58,076 - INFO - Sending request to Gemini API with prompt length: 40063
+2025-05-05 11:29:05,050 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Okay, here's a breakdown of the fee details I could gather from the provided context about SCSVMV University:\n\n**Engineering Courses (B.E. / B.Tech):**\n\n*   **Scholarship Schemes (Based on PCM Marks in HSC/JEE Mains):** Semester fees vary based on the marks obtained in Physics, Chemistry, and Mathematics (PCM) in Higher Secondary Certificate (HSC) or JEE Mains qualification. The fees range from R
+2025-05-05 11:29:05,050 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:29:05,050 - INFO - Generated response length: 2847
+2025-05-05 11:29:05,052 - INFO - Received response from Gemini
+2025-05-05 11:29:27,294 - INFO - Received chat request
+2025-05-05 11:29:27,295 - INFO - Processing message: fee details for cse... in english
+2025-05-05 11:29:27,295 - INFO - Searching MongoDB with query: fee details for cse fees cost payment structure semester annual charges
+2025-05-05 11:29:27,382 - INFO - Enhanced search terms: fee details for cse fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-05 11:29:27,521 - INFO - Sending prompt to Gemini...
+2025-05-05 11:29:27,521 - INFO - Sending request to Gemini API with prompt length: 42575
+2025-05-05 11:29:31,673 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, here's the fee details for Computer Science and Engineering (CSE) at SCSVMV University for the academic year 2025-2026, including potential scholarship schemes:\n\n**B.E. CSE (Full Time):**\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):** Semester fee: ₹50,000\n*   **Scholarship Scheme II (PCM 75% to 89.9 % in HSC):** Semester fee: ₹65
+2025-05-05 11:29:31,674 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-05 11:29:31,674 - INFO - Generated response length: 1664
+2025-05-05 11:29:31,675 - INFO - Received response from Gemini
+2025-05-06 09:37:32,856 - INFO - Configuring Gemini API...
+2025-05-06 09:37:32,869 - INFO - Successfully connected to MongoDB
+2025-05-06 09:37:32,907 - INFO - Starting server on port 5003
+2025-05-06 09:37:33,452 - INFO - Configuring Gemini API...
+2025-05-06 09:37:33,459 - INFO - Successfully connected to MongoDB
+2025-05-06 09:37:33,501 - INFO - Configuring Gemini API...
+2025-05-06 09:37:33,511 - INFO - Successfully connected to MongoDB
+2025-05-06 09:38:01,565 - INFO - Received chat request
+2025-05-06 09:38:01,566 - INFO - Processing message: be cse fee... in english
+2025-05-06 09:38:01,566 - INFO - Searching MongoDB with query: be cse fee fees cost payment structure semester annual charges
+2025-05-06 09:38:03,166 - INFO - Enhanced search terms: be cse fee fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-06 09:38:03,400 - INFO - Sending prompt to Gemini...
+2025-05-06 09:38:03,400 - INFO - Sending request to Gemini API with prompt length: 40123
+2025-05-06 09:38:03,420 - ERROR - Network error calling Gemini API: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBJBucqPHfgvtI19J4cuP_nuVMSMc3EAds (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1066e0e60>: Failed to resolve 'generativelanguage.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-05-06 09:38:03,420 - INFO - Received response from Gemini
+2025-05-06 09:38:27,023 - INFO - Received chat request
+2025-05-06 09:38:27,024 - INFO - Processing message: who is the hod of cse... in english
+2025-05-06 09:38:39,353 - INFO - Received chat request
+2025-05-06 09:38:39,355 - INFO - Processing message: who is the pro vc... in english
+2025-05-06 09:38:39,356 - INFO - Searching MongoDB with query: who is the pro vc
+2025-05-06 09:38:39,356 - INFO - Enhanced search terms: who is the pro vc
+2025-05-06 09:38:54,287 - INFO - Sending prompt to Gemini...
+2025-05-06 09:38:54,288 - INFO - Sending request to Gemini API with prompt length: 12189
+2025-05-06 09:38:54,303 - ERROR - Network error calling Gemini API: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBJBucqPHfgvtI19J4cuP_nuVMSMc3EAds (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x106663740>: Failed to resolve 'generativelanguage.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-05-06 09:38:54,303 - INFO - Received response from Gemini
+2025-05-06 09:39:53,992 - INFO - Received chat request
+2025-05-06 09:39:54,007 - INFO - Processing message: who is the pro vc... in english
+2025-05-06 09:39:54,007 - INFO - Searching MongoDB with query: who is the pro vc
+2025-05-06 09:39:54,007 - INFO - Enhanced search terms: who is the pro vc
+2025-05-06 09:42:15,991 - INFO - Configuring Gemini API...
+2025-05-06 09:42:16,582 - INFO - Successfully connected to MongoDB
+2025-05-06 09:42:16,698 - INFO - Starting server on port 5003
+2025-05-06 09:42:18,039 - INFO - Configuring Gemini API...
+2025-05-06 09:42:18,052 - INFO - Successfully connected to MongoDB
+2025-05-06 09:42:18,209 - INFO - Configuring Gemini API...
+2025-05-06 09:42:18,270 - INFO - Successfully connected to MongoDB
+2025-05-06 09:42:41,436 - INFO - Received chat request
+2025-05-06 09:42:41,437 - INFO - Processing message: hi... in english
+2025-05-06 09:42:53,252 - INFO - Received chat request
+2025-05-06 09:42:53,253 - INFO - Processing message: contact details... in english
+2025-05-06 09:43:09,451 - INFO - Received chat request
+2025-05-06 09:43:09,453 - INFO - Processing message: admission contact details... in english
+2025-05-06 09:44:36,077 - INFO - Configuring Gemini API...
+2025-05-06 09:44:36,087 - INFO - Successfully connected to MongoDB
+2025-05-06 09:44:36,184 - INFO - Configuring Gemini API...
+2025-05-06 09:44:36,194 - INFO - Successfully connected to MongoDB
+2025-05-06 09:45:06,457 - INFO - Received chat request
+2025-05-06 09:45:06,461 - INFO - Processing message: fee details... in english
+2025-05-06 09:45:06,462 - INFO - Searching MongoDB with query: fee details fees cost payment structure semester annual charges
+2025-05-06 09:45:19,136 - INFO - Enhanced search terms: fee details fees cost payment structure semester annual charges fee fees cost payment charges amount
+2025-05-06 09:45:26,820 - INFO - Sending prompt to Gemini...
+2025-05-06 09:45:26,820 - INFO - Sending request to Gemini API with prompt length: 40063
+2025-05-06 09:45:34,189 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Okay, based on the provided information from SCSVMV University, here's a breakdown of fee details:\n\n**General Information:**\n\n*   **Fee Structure 2025-26:** Information on the fee structure for the academic year 2025-26 is available on the university website.\n*   **One-Time Fees:** Most courses have a one-time fee payable at the time of admission (first semester only). The amount varies by cours
+2025-05-06 09:45:34,190 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:45:34,190 - INFO - Generated response length: 2638
+2025-05-06 09:45:34,192 - INFO - Received response from Gemini
+2025-05-06 09:46:02,732 - INFO - Received chat request
+2025-05-06 09:46:02,732 - INFO - Processing message: fee details for be cse... in english
+2025-05-06 09:46:02,733 - INFO - Searching MongoDB with query: fee details for be cse fees cost payment structure semester annual charges
+2025-05-06 09:46:04,010 - INFO - Enhanced search terms: fee details for be cse fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-06 09:46:05,301 - INFO - Sending prompt to Gemini...
+2025-05-06 09:46:05,302 - INFO - Sending request to Gemini API with prompt length: 42578
+2025-05-06 09:46:09,512 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Here are the BE-CSE fee details based on HSC PCM scores, according to the provided information from SCSVMV University:\n\n*   **Scholarship Scheme I (PCM 90% & above in HSC / JEE Mains qualified):** Semester fee is ₹50,000\n*   **Scholarship Scheme II (PCM 75% to 89.9 % in HSC):** Semester fee is ₹65,000\n*   **Scholarship Scheme III (PCM 60% to 74.9% in HSC):** Semester fee is ₹75,000\n*   **Scholar
+2025-05-06 09:46:09,513 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:46:09,513 - INFO - Generated response length: 931
+2025-05-06 09:46:09,515 - INFO - Received response from Gemini
+2025-05-06 09:47:52,037 - INFO - Configuring Gemini API...
+2025-05-06 09:47:52,066 - INFO - Successfully connected to MongoDB
+2025-05-06 09:47:52,143 - INFO - Starting server on port 5003
+2025-05-06 09:47:54,062 - INFO - Configuring Gemini API...
+2025-05-06 09:47:54,073 - INFO - Successfully connected to MongoDB
+2025-05-06 09:47:54,170 - INFO - Configuring Gemini API...
+2025-05-06 09:47:54,189 - INFO - Successfully connected to MongoDB
+2025-05-06 09:47:57,881 - INFO - Received chat request
+2025-05-06 09:47:57,885 - INFO - Processing message: hello... in english
+2025-05-06 09:47:58,899 - INFO - Received chat request
+2025-05-06 09:47:58,900 - INFO - Processing message: வணக்கம்... in tamil
+2025-05-06 09:47:58,900 - INFO - Searching MongoDB with query: வணக்கம்
+2025-05-06 09:47:58,900 - INFO - Enhanced search terms: வணக்கம்
+2025-05-06 09:47:58,927 - INFO - Sending prompt to Gemini...
+2025-05-06 09:47:58,927 - INFO - Sending request to Gemini API with prompt length: 337
+2025-05-06 09:48:01,535 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "மன்னிக்கவும், உங்கள் கேள்விக்கான குறிப்பிட்ட தகவலை என்னால் கண்டுபிடிக்க முடியவில்லை. தயவுசெய்து உங்கள் கேள்வியை மறுபரிசீலனை செய்ய முயற்சிக்கவும் அல்லது வேறு தலைப்பைப் பற்றி கேட்கவும்.\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+      
+2025-05-06 09:48:01,536 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:48:01,536 - INFO - Generated response length: 184
+2025-05-06 09:48:01,539 - INFO - Received response from Gemini
+2025-05-06 09:48:02,565 - INFO - Received chat request
+2025-05-06 09:48:02,565 - INFO - Processing message: नमस्ते... in hindi
+2025-05-06 09:48:02,566 - INFO - Searching MongoDB with query: नमस्ते
+2025-05-06 09:48:02,566 - INFO - Enhanced search terms: नमस्ते
+2025-05-06 09:48:02,578 - INFO - Sending prompt to Gemini...
+2025-05-06 09:48:02,578 - INFO - Sending request to Gemini API with prompt length: 336
+2025-05-06 09:48:04,705 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "नमस्ते।\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSME
+2025-05-06 09:48:04,706 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:48:04,706 - INFO - Generated response length: 8
+2025-05-06 09:48:04,709 - INFO - Received response from Gemini
+2025-05-06 09:48:05,736 - INFO - Received chat request
+2025-05-06 09:48:05,736 - INFO - Processing message: what are the departments available?... in english
+2025-05-06 09:48:11,347 - ERROR - Error fetching department information: cannot access local variable 'search_terms' where it is not associated with a value
+2025-05-06 09:48:12,366 - INFO - Received chat request
+2025-05-06 09:48:12,366 - INFO - Processing message: tell me about cse department... in english
+2025-05-06 09:48:14,099 - ERROR - Error fetching department information: cannot access local variable 'search_terms' where it is not associated with a value
+2025-05-06 09:48:15,138 - INFO - Received chat request
+2025-05-06 09:48:15,139 - INFO - Processing message: what is the fee for be cse?... in english
+2025-05-06 09:48:15,139 - INFO - Searching MongoDB with query: what is the fee for be cse? fees cost payment structure semester annual charges
+2025-05-06 09:48:18,795 - INFO - Enhanced search terms: what is the fee for be cse? fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-06 09:48:21,526 - INFO - Sending prompt to Gemini...
+2025-05-06 09:48:21,527 - INFO - Sending request to Gemini API with prompt length: 40140
+2025-05-06 09:48:24,888 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but I cannot answer the question about the fees for BE CSE program at SCSVMV University. The provided text mentions \"Fee Structure 2025-26\" under the Admission section, but it doesn't provide the specific fee amount for the BE CSE program. You would need to consult the official fee structure document or contact the university directly for that information.\n"
+          }
+        ],
+    
+2025-05-06 09:48:24,890 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:48:24,890 - INFO - Generated response length: 371
+2025-05-06 09:48:24,894 - INFO - Received response from Gemini
+2025-05-06 09:48:25,921 - INFO - Received chat request
+2025-05-06 09:48:25,921 - INFO - Processing message: what are the fees for all departments?... in english
+2025-05-06 09:48:28,387 - ERROR - Error fetching department information: cannot access local variable 'search_terms' where it is not associated with a value
+2025-05-06 09:48:29,410 - INFO - Received chat request
+2025-05-06 09:48:29,410 - INFO - Processing message: who is the hod of cse?... in english
+2025-05-06 09:48:30,422 - INFO - Received chat request
+2025-05-06 09:48:30,423 - INFO - Processing message: who is the head of sanskrit department?... in english
+2025-05-06 09:48:31,435 - INFO - Received chat request
+2025-05-06 09:48:31,435 - INFO - Processing message: what are the admission contact details?... in english
+2025-05-06 09:48:32,445 - INFO - Received chat request
+2025-05-06 09:48:32,445 - INFO - Processing message: give me the contact information... in english
+2025-05-06 09:48:33,456 - INFO - Received chat request
+2025-05-06 09:48:33,456 - INFO - Processing message: what courses are offered in cse?... in english
+2025-05-06 09:48:33,456 - INFO - Searching MongoDB with query: what courses are offered in cse? courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-05-06 09:48:33,457 - INFO - Enhanced search terms: what courses are offered in cse? courses programs degrees offered b.tech m.tech mba mca bba bca ph.d undergraduate postgraduate course program degree specialization branch computer science engineering computing programming software
+2025-05-06 09:50:20,311 - INFO - Sending prompt to Gemini...
+2025-05-06 09:50:20,317 - INFO - Sending request to Gemini API with prompt length: 75815
+2025-05-06 09:50:30,646 - ERROR - Timeout error calling Gemini API
+2025-05-06 09:50:30,648 - INFO - Received response from Gemini
+2025-05-06 09:50:31,741 - INFO - Received chat request
+2025-05-06 09:50:31,742 - INFO - Processing message: tell me about the mba program... in english
+2025-05-06 09:50:31,742 - INFO - Searching MongoDB with query: tell me about the mba program courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-05-06 09:50:31,742 - INFO - Enhanced search terms: tell me about the mba program courses programs degrees offered b.tech m.tech mba mca bba bca ph.d undergraduate postgraduate course program degree specialization branch
+2025-05-06 09:51:57,187 - INFO - Sending prompt to Gemini...
+2025-05-06 09:51:57,189 - INFO - Sending request to Gemini API with prompt length: 57791
+2025-05-06 09:52:01,563 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Based on the provided information, here's what I can tell you about the MBA program at SCSVMV University:\n\n*   **Eligibility:** Any recognized UG Degree with a minimum of 50% aggregate marks. A desirable score in a national-level entrance exam like ATMA / CAT/ JCET/ MAT/ JMAT/ XAT/ Test by SCSVMV is also expected.\n\n*   **Lateral Entry MBA:** Any UG Engineering Degree with minimum 50% aggregate ma
+2025-05-06 09:52:01,564 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:52:01,564 - INFO - Generated response length: 1062
+2025-05-06 09:52:01,567 - INFO - Received response from Gemini
+2025-05-06 09:52:45,491 - INFO - Configuring Gemini API...
+2025-05-06 09:52:45,505 - INFO - Successfully connected to MongoDB
+2025-05-06 09:52:45,596 - INFO - Configuring Gemini API...
+2025-05-06 09:52:45,613 - INFO - Successfully connected to MongoDB
+2025-05-06 09:52:50,956 - INFO - Configuring Gemini API...
+2025-05-06 09:52:50,974 - INFO - Successfully connected to MongoDB
+2025-05-06 09:52:51,075 - INFO - Configuring Gemini API...
+2025-05-06 09:52:51,090 - INFO - Successfully connected to MongoDB
+2025-05-06 09:53:13,390 - INFO - Received chat request
+2025-05-06 09:53:13,392 - INFO - Processing message: hello... in english
+2025-05-06 09:53:14,412 - INFO - Received chat request
+2025-05-06 09:53:14,414 - INFO - Processing message: வணக்கம்... in tamil
+2025-05-06 09:53:14,414 - INFO - Searching MongoDB with query: வணக்கம்
+2025-05-06 09:53:14,414 - INFO - Enhanced search terms: வணக்கம்
+2025-05-06 09:53:14,848 - INFO - Sending prompt to Gemini...
+2025-05-06 09:53:14,849 - INFO - Sending request to Gemini API with prompt length: 337
+2025-05-06 09:53:17,137 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "மன்னிக்கவும், உங்கள் கேள்விக்கான குறிப்பிட்ட தகவலை என்னால் கண்டுபிடிக்க முடியவில்லை. உங்கள் கேள்வியை மறுபடியும் கேட்க முடியுமா அல்லது வேறு தலைப்பைப் பற்றி கேட்க முடியுமா?\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        
+2025-05-06 09:53:17,140 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:53:17,140 - INFO - Generated response length: 171
+2025-05-06 09:53:17,143 - INFO - Received response from Gemini
+2025-05-06 09:53:18,181 - INFO - Received chat request
+2025-05-06 09:53:18,182 - INFO - Processing message: नमस्ते... in hindi
+2025-05-06 09:53:18,182 - INFO - Searching MongoDB with query: नमस्ते
+2025-05-06 09:53:18,182 - INFO - Enhanced search terms: नमस्ते
+2025-05-06 09:53:18,187 - INFO - Sending prompt to Gemini...
+2025-05-06 09:53:18,188 - INFO - Sending request to Gemini API with prompt length: 336
+2025-05-06 09:53:19,257 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "नमस्ते। मुझे खेद है, लेकिन मुझे आपके प्रश्न के लिए विशिष्ट जानकारी नहीं मिल पाई। कृपया अपने प्रश्न को फिर से दोहराने का प्रयास करें या किसी भिन्न विषय के बारे में पूछें।\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+2025-05-06 09:53:19,258 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:53:19,258 - INFO - Generated response length: 170
+2025-05-06 09:53:19,261 - INFO - Received response from Gemini
+2025-05-06 09:53:20,287 - INFO - Received chat request
+2025-05-06 09:53:20,287 - INFO - Processing message: what are the departments available?... in english
+2025-05-06 09:53:31,858 - ERROR - Error fetching department information: cannot access local variable 'search_terms' where it is not associated with a value
+2025-05-06 09:53:32,885 - INFO - Received chat request
+2025-05-06 09:53:32,885 - INFO - Processing message: tell me about cse department... in english
+2025-05-06 09:53:35,772 - ERROR - Error fetching department information: cannot access local variable 'search_terms' where it is not associated with a value
+2025-05-06 09:53:36,795 - INFO - Received chat request
+2025-05-06 09:53:36,796 - INFO - Processing message: what is the fee for be cse?... in english
+2025-05-06 09:53:36,796 - INFO - Searching MongoDB with query: what is the fee for be cse? fees cost payment structure semester annual charges
+2025-05-06 09:53:38,647 - INFO - Enhanced search terms: what is the fee for be cse? fees cost payment structure semester annual charges fee fees cost payment charges amount computer science engineering computing programming software
+2025-05-06 09:53:39,803 - INFO - Sending prompt to Gemini...
+2025-05-06 09:53:39,803 - INFO - Sending request to Gemini API with prompt length: 40140
+2025-05-06 09:53:43,779 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry, but I cannot provide the exact fee for the B.E. CSE (Computer Science and Engineering) program at SCSVMV University. The provided text includes general information about admissions, including a link to the \"Fee Structure 2025-26,\" but it does not list the specific fees for individual programs.\n\nTo find the B.E. CSE program fee, I recommend the following:\n\n*   **Visit the University 
+2025-05-06 09:53:43,782 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:53:43,782 - INFO - Generated response length: 722
+2025-05-06 09:53:43,789 - INFO - Received response from Gemini
+2025-05-06 09:53:44,832 - INFO - Received chat request
+2025-05-06 09:53:44,832 - INFO - Processing message: what are the fees for all departments?... in english
+2025-05-06 09:53:51,673 - ERROR - Error fetching department information: cannot access local variable 'search_terms' where it is not associated with a value
+2025-05-06 09:53:52,700 - INFO - Received chat request
+2025-05-06 09:53:52,701 - INFO - Processing message: who is the hod of cse?... in english
+2025-05-06 09:53:53,709 - INFO - Received chat request
+2025-05-06 09:53:53,709 - INFO - Processing message: who is the head of sanskrit department?... in english
+2025-05-06 09:53:54,714 - INFO - Received chat request
+2025-05-06 09:53:54,714 - INFO - Processing message: what are the admission contact details?... in english
+2025-05-06 09:53:55,726 - INFO - Received chat request
+2025-05-06 09:53:55,726 - INFO - Processing message: give me the contact information... in english
+2025-05-06 09:53:56,733 - INFO - Received chat request
+2025-05-06 09:53:56,734 - INFO - Processing message: what courses are offered in cse?... in english
+2025-05-06 09:53:56,735 - INFO - Searching MongoDB with query: what courses are offered in cse? courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-05-06 09:53:56,735 - INFO - Sending prompt to Gemini...
+2025-05-06 09:53:56,736 - INFO - Sending request to Gemini API with prompt length: 1177
+2025-05-06 09:53:59,085 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The CSE department at SCSVMV University offers the following courses:\n\n*   **Undergraduate:** B.E. Computer Science and Engineering\n*   **Postgraduate:** M.E. Computer Science and Engineering\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGI
+2025-05-06 09:53:59,085 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:53:59,085 - INFO - Generated response length: 192
+2025-05-06 09:53:59,087 - INFO - Received response from Gemini
+2025-05-06 09:54:00,185 - INFO - Received chat request
+2025-05-06 09:54:00,186 - INFO - Processing message: tell me about the mba program... in english
+2025-05-06 09:54:00,187 - INFO - Searching MongoDB with query: tell me about the mba program courses programs degrees offered B.Tech M.Tech MBA MCA BBA BCA Ph.D undergraduate postgraduate
+2025-05-06 09:54:00,187 - INFO - Enhanced search terms: tell me about the mba program courses programs degrees offered b.tech m.tech mba mca bba bca ph.d undergraduate postgraduate course program degree specialization branch
+2025-05-06 09:55:23,877 - INFO - Sending prompt to Gemini...
+2025-05-06 09:55:23,891 - INFO - Sending request to Gemini API with prompt length: 57791
+2025-05-06 09:55:27,157 - INFO - Raw response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Here's information about the MBA program at SCSVMV University, based on the provided context:\n\n*   **Course Name:** Master of Business Administration (M.B.A.)\n*   **Eligibility:** Any recognized UG Degree with minimum 50% aggregate marks. A desirable score in any National level entrance exam like ATMA / CAT/ JCET/ MAT/ JMAT/ XAT/ Test by SCSVMV.\n*   **Duration:** 2 Years\n*   **MBA Lateral Entry:
+2025-05-06 09:55:27,159 - INFO - Received response from Gemini API: dict_keys(['candidates', 'usageMetadata', 'modelVersion'])
+2025-05-06 09:55:27,159 - INFO - Generated response length: 955
+2025-05-06 09:55:27,168 - INFO - Received response from Gemini
+2025-05-06 09:58:45,781 - INFO - Configuring Gemini API...
+2025-05-06 09:58:45,828 - INFO - Successfully connected to MongoDB
+2025-05-06 09:58:45,998 - INFO - Configuring Gemini API...
+2025-05-06 09:58:46,031 - INFO - Successfully connected to MongoDB
+2025-05-06 09:58:50,413 - INFO - Configuring Gemini API...
+2025-05-06 09:58:50,445 - INFO - Successfully connected to MongoDB
+2025-05-06 09:58:50,533 - INFO - Configuring Gemini API...
+2025-05-06 09:58:50,546 - INFO - Successfully connected to MongoDB
+2025-05-06 09:59:58,240 - INFO - Configuring Gemini API...
+2025-05-06 09:59:58,260 - INFO - Successfully connected to MongoDB
+2025-05-06 09:59:58,374 - INFO - Configuring Gemini API...
+2025-05-06 09:59:58,399 - INFO - Successfully connected to MongoDB
